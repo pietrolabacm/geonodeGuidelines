@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+%\usepackage[brazil]{babel}
+%\usepackage[latin1]{inputenc}  
+
+     
+\sloppy
+
+\title{Guia para o uso do Geonode}
+
+\author{NDS\inst{1}}
+
+
+\address{
+  NDS
+\nextinstitute
+  CPRM
+\email{\{cprm,nds\}@inf.ufrgs.br}
+}
+
+\begin{document} 
+
+\maketitle
+
+
+\section{Introdução}
+
+Este documento tem como objetivo definir procedimentos a serem utilizados para
+a carga de arquivos e metadados no ambiente Geonode do SGB.
+
+\section{Acesso} \label{sec:firstpage}
+
+Para carregar arquivos no sistema Geonode é necessário que o usuário esteja
+conectado em uma conta com permissão para a carga. Para isso o usuário deve
+seguir o link na parte superior direita da página para a tela de login e
+inserir suas credenciais (ref{fig:login}).
+
+\section{Dados}
+
+Com o acesso ao usuário com permissões para carga será possível visualizar o
+menu de "Dados" no canto superior esquerda da página. Duas opções estão
+disponíveis: datasets e documentos. Datasets se referem aos arquivos de cunho
+de representação geoespacial (shapefiles, geopackages, geojson, geotiff e
+outros) e documentos se referem aos demais arquivos de registro de dados (pdf,
+jpeg, log, csv, zip e outros).
+
+Após acessar o menu Dados-Datasets ou Dados-Documentos será possível carregar
+novos dados utilizando o botão "Adicionar Recurso", no canto superior direito
+da página. Em uma nova página o usuário poderá utilizar o recurso de arrastar e
+soltar ou o botão de selecionar arquivos no canto esquerdo da página, é
+possível carregar mais de um arquivo durante este processo. Com os arquivos
+devidamente selecionados o botão de "Upload" estará disponível para prosseguir
+o carregamento. 
+
+\textbf{Atenção, no caso de shapefiles será necessário que todos os seus
+componentes sejam selecionados ou que todos os componentes sejam comprimidos em
+um arquivo zip.}
+
+Com a conclusão do upload, o usuário será redirecionado para uma página
+listando todos os arquivos carregados, cada um apresentando um botão de
+exclusão no caso de algum erro. Ao clicar no nome do arquivo o usuário poderá
+acessar sua página de detalhamento, o mesmo pode ser feito através do menu
+"Dados" acessado anteriormente.
+
+Na página de detalhamento do dado é possível visualizar, filtrar e editar os
+dados geoespaciais.
+
+\section{Metadados}
+
+
+
+
+
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\end{document}
