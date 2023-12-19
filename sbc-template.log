@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.21)  14 DEC 2023 15:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.21)  19 DEC 2023 13:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -208,31 +208,45 @@ File: omspcr.fd
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
- (./sbc-template.bbl
+<img/login.pdf, id=1, 550.9342pt x 338.31331pt>
+File: img/login.pdf Graphic file (type pdf)
+<use img/login.pdf>
+Package pdftex.def Info: img/login.pdf  used on input line 43.
+(pdftex.def)             Requested size: 426.79135pt x 262.09203pt.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 44.
+ (d:/TinyTeX/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+) [1
+
+{d:/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc} <./img/login.pdf>]
+<img/upload.pdf, id=19, 523.17871pt x 313.42204pt>
+File: img/upload.pdf Graphic file (type pdf)
+<use img/upload.pdf>
+Package pdftex.def Info: img/upload.pdf  used on input line 82.
+(pdftex.def)             Requested size: 426.79135pt x 255.68777pt.
+ [2 <./img/upload.pdf>] (./sbc-template.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [1
-
-{d:/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}] (./sbc-template.aux)
+) [3] (./sbc-template.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4304 strings out of 477128
- 73272 string characters out of 5810034
- 1926248 words of memory out of 5000000
- 25308 multiletter control sequences out of 15000+600000
- 569304 words of font info for 58 fonts, out of 8000000 for 9000
+ 4391 strings out of 477128
+ 74615 string characters out of 5810034
+ 1923248 words of memory out of 5000000
+ 25389 multiletter control sequences out of 15000+600000
+ 572149 words of font info for 62 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,8n,79p,306b,367s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/TinyTeX/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on sbc-template.pdf (1 page, 58444 bytes).
+ 72i,8n,79p,306b,417s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/TinyTeX/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on sbc-template.pdf (3 pages, 148629 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

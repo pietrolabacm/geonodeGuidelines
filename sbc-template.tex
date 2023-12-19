@@ -18,7 +18,7 @@
   NDS
 \nextinstitute
   CPRM
-\email{\{cprm,nds\}@inf.ufrgs.br}
+\email{\{cprm,nds\}@sgb.gov.br}
 }
 
 \begin{document} 
@@ -28,50 +28,79 @@
 
 \section{Introdução}
 
-Este documento tem como objetivo definir procedimentos a serem utilizados para
-a carga de arquivos e metadados no ambiente Geonode do SGB.
+Este documento define procedimentos a serem utilizados para a carga de arquivos
+e metadados no ambiente Geonode do SGB.
 
 \section{Acesso} \label{sec:firstpage}
 
-Para carregar arquivos no sistema Geonode é necessário que o usuário esteja
-conectado em uma conta com permissão para a carga. Para isso o usuário deve
-seguir o link na parte superior direita da página para a tela de login e
-inserir suas credenciais (ref{fig:login}).
+Para carregar arquivos no sistema Geonode, o usuário deve estar conectado em
+uma conta com permissão para a carga. Para isso o usuário deve seguir o link na
+parte superior direita da página para a tela de login e inserir suas
+credenciais (ref{fig:login}).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth, keepaspectratio]{img/login.pdf}
+  \caption{Caminho para a inserir as credenciais de login, em vermelho o link para acessar a página de login.}
+  \label{fig:login}
+\end{figure}
+
 
 \section{Dados}
 
 Com o acesso ao usuário com permissões para carga será possível visualizar o
-menu de "Dados" no canto superior esquerda da página. Duas opções estão
-disponíveis: datasets e documentos. Datasets se referem aos arquivos de cunho
-de representação geoespacial (shapefiles, geopackages, geojson, geotiff e
-outros) e documentos se referem aos demais arquivos de registro de dados (pdf,
-jpeg, log, csv, zip e outros).
+menu de "Dados" no canto superior esquerda da página (Figura
+\ref{fig:upload}.1). Duas opções estão disponíveis: datasets e documentos.
+Datasets se referem aos arquivos de cunho de representação geoespacial
+(shapefiles, geopackages, geojson, geotiff e outros) e documentos se referem
+aos demais arquivos de registro de dados (pdf, jpeg, log, csv, zip e outros).
 
-Após acessar o menu Dados-Datasets ou Dados-Documentos será possível carregar
-novos dados utilizando o botão "Adicionar Recurso", no canto superior direito
-da página. Em uma nova página o usuário poderá utilizar o recurso de arrastar e
-soltar ou o botão de selecionar arquivos no canto esquerdo da página, é
-possível carregar mais de um arquivo durante este processo. Com os arquivos
-devidamente selecionados o botão de "Upload" estará disponível para prosseguir
-o carregamento. 
+Após acessar o menu "Dados-Datasets" ou "Dados-Documentos" será possível
+carregar novos dados utilizando o botão "Adicionar Recurso", no canto superior
+direito da página (Figura \ref{fig:upload}.2). Em uma nova página o usuário
+poderá utilizar o recurso de arrastar e soltar ou o botão de selecionar
+arquivos no canto esquerdo da página (Figura \ref{fig:upload}.3), é possível
+carregar mais de um arquivo durante este processo. Com os arquivos devidamente
+selecionados o botão de "Upload" estará disponível para prosseguir o
+carregamento (Figura \ref{fig:upload}.4). 
 
 \textbf{Atenção, no caso de shapefiles será necessário que todos os seus
 componentes sejam selecionados ou que todos os componentes sejam comprimidos em
 um arquivo zip.}
 
-Com a conclusão do upload, o usuário será redirecionado para uma página
-listando todos os arquivos carregados, cada um apresentando um botão de
-exclusão no caso de algum erro. Ao clicar no nome do arquivo o usuário poderá
-acessar sua página de detalhamento, o mesmo pode ser feito através do menu
-"Dados" acessado anteriormente.
+Ao concluir o upload o usuário será redirecionado para uma página listando
+todos os arquivos carregados. Ao clicar no nome do arquivo o usuário poderá
+acessar sua página de detalhamento (Figura \ref{fig:upload}.5). O mesmo pode
+ser feito através do menu "Dados" acessado anteriormente, clicando na imagem de
+apresentação do dado e em seguida em visualizar.
 
 Na página de detalhamento do dado é possível visualizar, filtrar e editar os
 dados geoespaciais.
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth, keepaspectratio]{img/upload.pdf}
+  \caption{Fluxo para o upload de dados no Geonode.}
+  \label{fig:upload}
+\end{figure}
+
 \section{Metadados}
 
+Na página de detalhamento de um dado é possível editar seus metadados
+através do menu "Editar-Editar Metadados"
 
+Na página de edição de metadados o usuário pode alterar todos os aspectos do
+metadado através de um formulário. A medida que os campos são completos uma
+barra de progresso é atualizada. 
 
+AQUI VAI UMA ESPECIFICAÇÃO SOBRE CADA METADADO?
+
+\section{Mapas}
+
+No menu Mapas na aba superior da página do Geonode é possível consultar os
+mapas existentes e criar novos mapas. Usando o botão "Adicionar recursos" na
+parte superior direita da página e em seguida "Criar mapa" é possível criar um
+mapa a partir dos dados inseridos no Geonode.
 
 
 \bibliographystyle{sbc}
