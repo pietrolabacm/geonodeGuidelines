@@ -102,6 +102,49 @@ mapas existentes e criar novos mapas. Usando o botão "Adicionar recursos" na
 parte superior direita da página e em seguida "Criar mapa" é possível criar um
 mapa a partir dos dados inseridos no Geonode.
 
+\section{Carga de Bancos de Dados}
+
+\subsection{Credenciais}
+Para realizar a carga de Bancos de Dados, é necessário o acesso de um usuário
+com permissão de administrador no ambiente Geonode. Através do menu do usuário
+na parte superior direita acesse o Geoserver. Na página do Geoserver clique na
+aba de login na parte superior, a página irá garantir acesso de administrador,
+caso o contrário realize o login usando as credenciais de administrador do
+Geoserver.
+
+\subsection{Stores}
+Uma vez conectado com acesso de administrador na página do Geoserver. Entre na
+aba "Store" na lateral esquerda da página e em seguida crie um novo Store.
+Selecione a opção "PostGISDatabase". Um formulário deverá ser preenchido para a
+criação de um novo Store, atente para os parâmetros host e port que devem ser
+os parâmetros do banco de dados na mesma localização do Geonode. \textbf{O
+parâmetro workspace deve ser Geonode}. Os parâmetros de usuário e senha devem
+ser os mesmos utilizados pelo Geonode no Postgres. Ao finalizar a criação de um
+novo store a página irá te redirecionar para a aba "New Layer".
+
+\subsection{Layers}
+Dentro da aba "New Layer", acessando pelo menu lateral esquerdo ou
+redirecionado pela aba Store, estarão disponíveis os feature classes presentes
+no banco de dados em uma tabela. Ao clicar no botão "Publish" a página será
+redirecionada para um formulário com informações sobre a feature class já
+preenchidas. O usuário deve verificar se o sistema de referência está
+corretamente detectado pelo Geoserver, em caso negativo o sistema deverá ser
+explicitado de acordo com o código EPSG. Com o sistema devidaemente
+identificado as extensões do feature class devem ser definidas por meio do
+botão "Compute from data". Feito isso, a layer pode ser salva e estará
+disponível no Geoserver.
+
+\subsection{Django}
+Para que as mudanças no Geoserver sejam visíveis no Geonode é necessário
+atualizar as layers as quais o Django tem acesso. Para isso, é necessário
+utilizar o script "manage.py" usando o argumento "updatelayers" dentro do
+container que hospeda a instância do Django. Uma vez com o terminal dentro da
+instância do Django basta utilizar o seguinte comando: 
+
+python manage.py updatelayers
+
+Após sua execução será informado se o Django obteve sucesso no upload das novas
+layers e em caso positivo será possível visualiza-las através do Geonode.
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}

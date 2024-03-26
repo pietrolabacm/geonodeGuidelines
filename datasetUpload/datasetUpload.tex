@@ -28,15 +28,15 @@
 
 \section{Introdução}
 
-Este documento define procedimentos a serem utilizados para a carga de arquivos
-e metadados no ambiente Geonode do SGB.
+Este documento define procedimentos a serem utilizados para a carga de dados,
+estilos e metadados no ambiente Geonode do Odisseia.
 
 \section{Acesso} \label{sec:firstpage}
 
 Para carregar arquivos no sistema Geonode, o usuário deve estar conectado em
 uma conta com permissão para a carga. Para isso o usuário deve seguir o link na
 parte superior direita da página para a tela de login e inserir suas
-credenciais (ref{fig:login}).
+credenciais (Figura \ref{fig:login}).
 
 \begin{figure}[h]
   \centering
@@ -84,10 +84,45 @@ dados geoespaciais.
   \label{fig:upload}
 \end{figure}
 
+\subsection{Estilo}
+
+Na página de detalhamento de um dado é possível editar seu estilo através do
+menu "Editar-Editar Estilo" (Figura \ref{fig:estilocodigo}.1).
+
+O usuário pode utilizar o editor de estilo nativo do Geonode ou importar o
+estilo do QGIS através de um arquivo SLD. Para importar estilos através do SLD
+selecione o editor de código no canto superior direito do menu de edição de
+estilo (Figura \ref{fig:estilocodigo}.2) e insira o texto de descrição SLD
+criado pelo QGIS (Figura \ref{fig:estilocodigo}.3). Por fim aplique as
+alterações (Figura \ref{fig:estilocodigo}.4).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth, keepaspectratio]{img/estilocodigo.pdf}
+  \caption{Fluxo para a importação de estilo de um arquivo SLD.}
+  \label{fig:estilocodigo}
+\end{figure}
+
+\subsubsection{Criando estilos SLD no QGIS}
+
+No QGIS, na lista de camadas, clique com o botão direito na camada que deseja
+exportar o estilo em SLD (Figura \ref{fig:exportarsld}.1). Siga para o menu
+"Propriedades" e "Simbologia". No canto inferior esquerdo do menu simbologia
+clique em "Estilo" e em seguida em "Salvar estilo" (Figura
+\ref{fig:exportarsld}.2). No novo menu selecione o estilo SLD (Figura
+\ref{fig:exportarsld}.3) e salve em um local a sua escolha.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[keepaspectratio]{img/exportarsld.pdf}
+  \caption{Fluxo para a exportação de um estilo para um arquivo SLD.}
+  \label{fig:exportarsld}
+\end{figure}
+
 \subsection{Metadados}
 
 Na página de detalhamento de um dado é possível editar seus metadados
-através do menu "Editar-Editar Metadados"
+através do menu "Editar-Editar Metadados".
 
 Na página de edição de metadados o usuário pode alterar todos os aspectos do
 metadado através de um formulário. A medida que os campos são completos uma
@@ -101,50 +136,6 @@ No menu Mapas na aba superior da página do Geonode é possível consultar os
 mapas existentes e criar novos mapas. Usando o botão "Adicionar recursos" na
 parte superior direita da página e em seguida "Criar mapa" é possível criar um
 mapa a partir dos dados inseridos no Geonode.
-
-\section{Carga de Bancos de Dados}
-
-\subsection{Credenciais}
-Para realizar a carga de Bancos de Dados, é necessário o acesso de um usuário
-com permissão de administrador no ambiente Geonode. Através do menu do usuário
-na parte superior direita acesse o Geoserver. Na página do Geoserver clique na
-aba de login na parte superior, a página irá garantir acesso de administrador,
-caso o contrário realize o login usando as credenciais de administrador do
-Geoserver.
-
-\subsection{Stores}
-Uma vez conectado com acesso de administrador na página do Geoserver. Entre na
-aba "Store" na lateral esquerda da página e em seguida crie um novo Store.
-Selecione a opção "PostGISDatabase". Um formulário deverá ser preenchido para a
-criação de um novo Store, atente para os parâmetros host e port que devem ser
-os parâmetros do banco de dados na mesma localização do Geonode. \textbf{O
-parâmetro workspace deve ser Geonode}. Os parâmetros de usuário e senha devem
-ser os mesmos utilizados pelo Geonode no Postgres. Ao finalizar a criação de um
-novo store a página irá te redirecionar para a aba "New Layer".
-
-\subsection{Layers}
-Dentro da aba "New Layer", acessando pelo menu lateral esquerdo ou
-redirecionado pela aba Store, estarão disponíveis os feature classes presentes
-no banco de dados em uma tabela. Ao clicar no botão "Publish" a página será
-redirecionada para um formulário com informações sobre a feature class já
-preenchidas. O usuário deve verificar se o sistema de referência está
-corretamente detectado pelo Geoserver, em caso negativo o sistema deverá ser
-explicitado de acordo com o código EPSG. Com o sistema devidaemente
-identificado as extensões do feature class devem ser definidas por meio do
-botão "Compute from data". Feito isso, a layer pode ser salva e estará
-disponível no Geoserver.
-
-\subsection{Django}
-Para que as mudanças no Geoserver sejam visíveis no Geonode é necessário
-atualizar as layers as quais o Django tem acesso. Para isso, é necessário
-utilizar o script "manage.py" usando o argumento "updatelayers" dentro do
-container que hospeda a instância do Django. Uma vez com o terminal dentro da
-instância do Django basta utilizar o seguinte comando: 
-
-python manage.py updatelayers
-
-Após sua execução será informado se o Django obteve sucesso no upload das novas
-layers e em caso positivo será possível visualiza-las através do Geonode.
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
