@@ -3,28 +3,24 @@
 \usepackage{sbc-template}
 \usepackage{graphicx,url}
 \usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
 %\usepackage[brazil]{babel}
 %\usepackage[latin1]{inputenc}  
 
-     
-\sloppy
+\pagenumbering{gobble}                          % sets page numbering off
+\pagestyle{fancy}\setlength\headheight{100pt}   % set the pagestyle to fancy to include headers and footers
+\pagestyle{fancy}\setlength\textheight{650pt}
+\pagestyle{fancy}\setlength\footskip{20pt}
+\fancyhf{}                                      % clear the header and footer
+\renewcommand{\headrulewidth}{0pt}              % no horizontale ruler under header
+\fancyhead[L]{\includegraphics[width=3.8cm]{img/LogoINCT.jpg}}
+\fancyhead[R]{\includegraphics[width=3.8cm]{img/LogoOdissea.jpg}}
 
-\title{Guia para o uso do Geonode}
-
-\author{NDS\inst{1}}
-
-
-\address{
-  NDS
-\nextinstitute
-  CPRM
-\email{\{cprm,nds\}@sgb.gov.br}
-}
+\author{Pietro Laba Cabral de Menezes}
 
 \begin{document} 
 
-\maketitle
-
+\title{Guia para o carregamento de dados no Geonode}
 
 \section{Introdução}
 
@@ -38,7 +34,7 @@ uma conta com permissão para a carga. Para isso o usuário deve seguir o link n
 parte superior direita da página para a tela de login e inserir suas
 credenciais (Figura \ref{fig:login}).
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=\textwidth, keepaspectratio]{img/login.pdf}
   \caption{Caminho para a inserir as credenciais de login, em vermelho o link para acessar a página de login.}
@@ -77,7 +73,7 @@ apresentação do dado e em seguida em visualizar.
 Na página de detalhamento do dado é possível visualizar, filtrar e editar os
 dados geoespaciais.
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=\textwidth, keepaspectratio]{img/upload.pdf}
   \caption{Fluxo para o upload de dados no Geonode.}
@@ -96,7 +92,7 @@ estilo (Figura \ref{fig:estilocodigo}.2) e insira o texto de descrição SLD
 criado pelo QGIS (Figura \ref{fig:estilocodigo}.3). Por fim aplique as
 alterações (Figura \ref{fig:estilocodigo}.4).
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=\textwidth, keepaspectratio]{img/estilocodigo.pdf}
   \caption{Fluxo para a importação de estilo de um arquivo SLD.}
@@ -112,30 +108,54 @@ clique em "Estilo" e em seguida em "Salvar estilo" (Figura
 \ref{fig:exportarsld}.2). No novo menu selecione o estilo SLD (Figura
 \ref{fig:exportarsld}.3) e salve em um local a sua escolha.
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \centering
-  \includegraphics[keepaspectratio]{img/exportarsld.pdf}
+  \includegraphics[width=10cm, keepaspectratio]{img/exportarsld.pdf}
   \caption{Fluxo para a exportação de um estilo para um arquivo SLD.}
   \label{fig:exportarsld}
 \end{figure}
 
 \subsection{Metadados}
 
-Na página de detalhamento de um dado é possível editar seus metadados
-através do menu "Editar-Editar Metadados".
+Na página de detalhamento de um dado é possível editar seus metadados através
+do menu "Editar-Editar Metadados" (Figura \ref{fig:metadado}.1). 
 
 Na página de edição de metadados o usuário pode alterar todos os aspectos do
-metadado através de um formulário. A medida que os campos são completos uma
-barra de progresso é atualizada. 
+metadado através de um formulário (Figura \ref{fig:metadado}.2). A medida que os
+campos são preenchidos uma barra de progresso é atualizada (Figura
+\ref{fig:metadado}.3), quando completa o metadado possui informações suficientes
+para cumprir com os requisitos da iso 19.115.
 
-AQUI VAI UMA ESPECIFICAÇÃO SOBRE CADA METADADO?
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=10cm, keepaspectratio]{img/metadado.pdf}
+  \caption{Acesso, edição e progresso de um metadado.}
+  \label{fig:metadado}
+\end{figure}
 
-\subsection{Mapas}
+Grande parte das informações necessárias para a formação do metadado são
+extraídas automaticamente do dataset pelo Geonode. Os dados que requerem
+inserção manual para um metadado completo são:
+
+\begin{itemize}
+  \item Título
+  \item Abstract
+  \item Data de publicação/criação
+  \item Categoria
+  \item Palavra-chave
+  \item Idioma
+  \item Licença
+  \item Atribuição
+  \item Declaração de qualidade dos dados
+  \item Restrições de uso/acesso
+\end{itemize}
+
+\section{Mapas}
 
 No menu Mapas na aba superior da página do Geonode é possível consultar os
 mapas existentes e criar novos mapas. Usando o botão "Adicionar recursos" na
 parte superior direita da página e em seguida "Criar mapa" é possível criar um
-mapa a partir dos dados inseridos no Geonode.
+mapa a partir dos datasets inseridos no Geonode.
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}

@@ -38,7 +38,10 @@
      id="layer3"
      inkscape:label="bkg"><g
        id="g3"
-       transform="translate(-9.5367433e-6,-1.1161981)"><image
+       transform="translate(-9.5367433e-6,-1.1161981)"
+       inkscape:export-filename="..\datasetUpload\img\exportarsld.pdf"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><image
          width="69.585419"
          height="35.454166"
          preserveAspectRatio="none"
