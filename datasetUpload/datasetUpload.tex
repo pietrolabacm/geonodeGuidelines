@@ -4,7 +4,7 @@
 \usepackage{graphicx,url}
 \usepackage[utf8]{inputenc}
 \usepackage{fancyhdr}
-%\usepackage[brazil]{babel}
+\usepackage[brazil]{babel}
 %\usepackage[latin1]{inputenc}  
 
 \pagenumbering{gobble}                          % sets page numbering off
@@ -16,16 +16,24 @@
 \fancyhead[L]{\includegraphics[width=3.8cm]{img/LogoINCT.jpg}}
 \fancyhead[R]{\includegraphics[width=3.8cm]{img/LogoOdissea.jpg}}
 
-\author{Pietro Laba Cabral de Menezes}
-
 \begin{document} 
 
-\title{Guia para o carregamento de dados no Geonode}
+%\title{Guia para o carregamento de dados no Geonode Odisseia}
+%\date{}
+%\maketitle
+%\thispagestyle{fancy}
+
+\begin{center}
+  \vspace{12pt}
+  \Large\textbf{Guia para carregamento de dados no Geonode Odisseia}
+\end{center}
 
 \section{Introdução}
 
-Este documento define procedimentos a serem utilizados para a carga de dados,
-estilos e metadados no ambiente Geonode do Odisseia.
+Este documento define procedimentos a serem utilizados no ambiente Geonode do
+Odisseia para a carga de dados e a manutenção de seus estilos, metadados e
+relacionamentos. O documento também traz instruções para a criação de mapas no
+ambiente.
 
 \section{Acesso} \label{sec:firstpage}
 
@@ -42,7 +50,7 @@ credenciais (Figura \ref{fig:login}).
 \end{figure}
 
 
-\section{Carga de Dados}
+\section{Carga de dados e documentos}
 
 Com o acesso ao usuário com permissões para carga será possível visualizar o
 menu de "Dados" no canto superior esquerda da página (Figura
@@ -52,9 +60,9 @@ Datasets se referem aos arquivos de cunho de representação geoespacial
 aos demais arquivos de registro de dados (pdf, jpeg, log, csv, zip e outros).
 
 Após acessar o menu "Dados-Datasets" ou "Dados-Documentos" será possível
-carregar novos dados utilizando o botão "Adicionar Recurso", no canto superior
-direito da página (Figura \ref{fig:upload}.2). Em uma nova página o usuário
-poderá utilizar o recurso de arrastar e soltar ou o botão de selecionar
+carregar novos arquivos utilizando o botão "Adicionar Recurso", no canto
+superior direito da página (Figura \ref{fig:upload}.2). Em uma nova página o
+usuário poderá utilizar o recurso de arrastar e soltar ou o botão de selecionar
 arquivos no canto esquerdo da página (Figura \ref{fig:upload}.3), é possível
 carregar mais de um arquivo durante este processo. Com os arquivos devidamente
 selecionados o botão de "Upload" estará disponível para prosseguir o
@@ -121,10 +129,10 @@ Na página de detalhamento de um dado é possível editar seus metadados atravé
 do menu "Editar-Editar Metadados" (Figura \ref{fig:metadado}.1). 
 
 Na página de edição de metadados o usuário pode alterar todos os aspectos do
-metadado através de um formulário (Figura \ref{fig:metadado}.2). A medida que os
-campos são preenchidos uma barra de progresso é atualizada (Figura
-\ref{fig:metadado}.3), quando completa o metadado possui informações suficientes
-para cumprir com os requisitos da iso 19.115.
+metadado através de um formulário (Figura \ref{fig:metadado}.2). A medida que
+os campos são preenchidos uma barra de progresso é atualizada (Figura
+\ref{fig:metadado}.3), quando completa o metadado possui informações
+suficientes para cumprir com os requisitos da iso 19.115.
 
 \begin{figure}[ht]
   \centering
@@ -150,12 +158,53 @@ inserção manual para um metadado completo são:
   \item Restrições de uso/acesso
 \end{itemize}
 
+\textbf{Para a filtragem dos dados é importante que os metadados
+ estejam preenchidos corretamente. Sendo assim, todo dado inserido deve conter
+ seu sítio de pesquisa como Palavra-chave e pertencer ao grupo de seu sítio.}
+
+\subsubsection{Relacionamento de datasets e documentos}
+
+O relacionamento de dados permite que o usuário encontre outros dados ou
+documentos que tenham correlação com o dado que esta sendo visualizado. Para
+isso, é necessário definir seus relacionamentos em seus metadados. Durante a
+edição de metadados, na aba de "Metadados Opcionais" (Figura
+\ref{fig:relacionamentos}.1) é possível inserir "Recursos Relacionados" (Figura
+\ref{fig:relacionamentos}.2). O Geonode irá listar todos os recursos
+disponíveis que podem ser filtrados pela caixa de texto.
+
+Quando um dos recursos possuir a relação, será possível seguir para o outro por
+meio da aba "Recursos Relacionados" no menu à direita na tela de visualização
+do dado (Figura \ref{fig:relacionamentos}.3).
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=8cm, keepaspectratio]{img/relacionamentos.pdf}
+  \caption{Adicionando e visualizando relacionamentos de dados.}
+  \label{fig:relacionamentos}
+\end{figure}
+
 \section{Mapas}
 
 No menu Mapas na aba superior da página do Geonode é possível consultar os
-mapas existentes e criar novos mapas. Usando o botão "Adicionar recursos" na
-parte superior direita da página e em seguida "Criar mapa" é possível criar um
-mapa a partir dos datasets inseridos no Geonode.
+mapas existentes e criar novos mapas (Figura \ref{fig:criarmapa}.1). Usando o
+botão "Adicionar recursos" na parte superior direita da página e em seguida
+"Criar mapa" (Figura \ref{fig:criarmapa}.2) é possível criar um mapa a partir
+dos datasets inseridos no Geonode.
+
+Na página do mapa utilize o botão "Adicionar dataset" no menu superior (Figura
+\ref{fig:criarmapa}.3), este irá criar um catálogo a direita no qual poderão
+ser adicionados os datasets ao mapa (Figura \ref{fig:criarmapa}.4). As camadas
+podem ser organizadas utilizando o botão de camadas na parte superior direita
+do visualizador (Figura \ref{fig:criarmapa}.5) e utilizando a ferramente de
+arrastar e organizar o usuário poderá mudar a ordem de renderização dos dados
+(Figura \ref{fig:criarmapa}.6).
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=10cm, keepaspectratio]{img/criarmapa.pdf}
+  \caption{Fluxo para a criação de mapas e organização de suas camadas.}
+  \label{fig:criarmapa}
+\end{figure}
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  26 MAR 2024 15:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  27 MAR 2024 09:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -114,31 +114,50 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@erf=\skip58
 \f@nch@O@olf=\skip59
 \f@nch@O@orf=\skip60
-)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 21.
+) (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2024/02/07 v24.2 The Babel package
+\babel@savecnt=\count269
+\U@D=\dimen164
+\l@unhyphenated=\language79
+ (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count270
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\brazil.ldf
+Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
+Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
+(babel)             (\language56). Reported on input line 111.
+Package babel Info: Making " an active character on input line 143.
+))
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 19.
  (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count269
+\l__color_backend_stack_int=\count271
 \l__pdf_internal_box=\box52
 ) (datasetUpload.aux)
 \openout1 = `datasetUpload.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -149,16 +168,16 @@ LaTeX Font Info:    ... okay on input line 21.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
-* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* v-part:(T,H,B)=(42.67912pt, 731.23584pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=426.79135pt
 * \textheight=650.0pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
-* \topmargin=-48.70404pt
+* \topmargin=-89.1568pt
 * \headheight=100.0pt
-* \headsep=12.0pt
+* \headsep=24.0pt
 * \topskip=12.0pt
 * \footskip=20.0pt
 * \marginparwidth=44.0pt
@@ -178,51 +197,72 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count270
-\scratchdimen=\dimen164
+\scratchcounter=\count272
+\scratchdimen=\dimen165
 \scratchbox=\box53
-\nofMPsegments=\count271
-\nofMParguments=\count272
+\nofMPsegments=\count273
+\nofMParguments=\count274
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count273
-\MPscratchDim=\dimen165
-\MPnumerator=\count274
-\makeMPintoPDFobject=\count275
+\MPscratchCnt=\count275
+\MPscratchDim=\dimen166
+\MPnumerator=\count276
+\makeMPintoPDFobject=\count277
 \everyMPtoPDFconversion=\toks23
 ) (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+ (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)) (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
  (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 25.
+(Font)              <12> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 25.
+(Font)              <8> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 25.
+(Font)              <6> on input line 31.
 <img/login.pdf, id=1, 550.9342pt x 338.31331pt>
 File: img/login.pdf Graphic file (type pdf)
 <use img/login.pdf>
-Package pdftex.def Info: img/login.pdf  used on input line 39.
+Package pdftex.def Info: img/login.pdf  used on input line 47.
 (pdftex.def)             Requested size: 426.79135pt x 262.09203pt.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 40.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 48.
  (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-Overfull \hbox (4.16115pt too wide) in paragraph at lines 47--53
-\OT1/ptm/m/n/12 "Da-dos" no canto su-pe-rior es-querda da p[]agina (Figura 2[].1). Duas op[][]oes est[]ao dispon[]^^Pveis:
+Overfull \hbox (13.67622pt too wide) in paragraph at lines 55--61
+\OT1/ptm/m/n/12 pon[]^^Pveis: da-ta-sets e do-cu-men-tos. Da-ta-sets se re-fe-rem aos ar-qui-vos de cu-nho de representa[][]ao
  []
 
 <img/LogoINCT.jpg, id=2, 209.28188pt x 89.58469pt>
 File: img/LogoINCT.jpg Graphic file (type jpg)
 <use img/LogoINCT.jpg>
-Package pdftex.def Info: img/LogoINCT.jpg  used on input line 66.
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 70.
 (pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
 <img/LogoOdissea.jpg, id=3, 155.07938pt x 94.10156pt>
 File: img/LogoOdissea.jpg Graphic file (type jpg)
 <use img/LogoOdissea.jpg>
-Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 66.
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 70.
 (pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
 [1
 
@@ -230,80 +270,109 @@ Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 66.
 <img/upload.pdf, id=17, 523.17871pt x 313.42204pt>
 File: img/upload.pdf Graphic file (type pdf)
 <use img/upload.pdf>
-Package pdftex.def Info: img/upload.pdf  used on input line 78.
+Package pdftex.def Info: img/upload.pdf  used on input line 86.
 (pdftex.def)             Requested size: 426.79135pt x 255.68777pt.
 <img/estilocodigo.pdf, id=18, 376.46997pt x 346.75473pt>
 File: img/estilocodigo.pdf Graphic file (type pdf)
 <use img/estilocodigo.pdf>
-Package pdftex.def Info: img/estilocodigo.pdf  used on input line 97.
+Package pdftex.def Info: img/estilocodigo.pdf  used on input line 105.
 (pdftex.def)             Requested size: 426.79135pt x 393.10341pt.
 File: img/LogoINCT.jpg Graphic file (type jpg)
 <use img/LogoINCT.jpg>
-Package pdftex.def Info: img/LogoINCT.jpg  used on input line 110.
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 118.
 (pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
 File: img/LogoOdissea.jpg Graphic file (type jpg)
 <use img/LogoOdissea.jpg>
-Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 110.
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 118.
 (pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
  [2 <./img/upload.pdf>]
 <img/exportarsld.pdf, id=41, 294.26668pt x 393.59639pt>
 File: img/exportarsld.pdf Graphic file (type pdf)
 <use img/exportarsld.pdf>
-Package pdftex.def Info: img/exportarsld.pdf  used on input line 113.
+Package pdftex.def Info: img/exportarsld.pdf  used on input line 121.
 (pdftex.def)             Requested size: 284.52756pt x 380.58687pt.
 <img/metadado.pdf, id=42, 410.95264pt x 442.65083pt>
 File: img/metadado.pdf Graphic file (type pdf)
 <use img/metadado.pdf>
-Package pdftex.def Info: img/metadado.pdf  used on input line 131.
+Package pdftex.def Info: img/metadado.pdf  used on input line 139.
 (pdftex.def)             Requested size: 284.52756pt x 306.48308pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 141.
+File: img/LogoINCT.jpg Graphic file (type jpg)
+<use img/LogoINCT.jpg>
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 147.
+(pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
+File: img/LogoOdissea.jpg Graphic file (type jpg)
+<use img/LogoOdissea.jpg>
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 147.
+(pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
+ [3 <./img/estilocodigo.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 149.
  (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 File: img/LogoINCT.jpg Graphic file (type jpg)
 <use img/LogoINCT.jpg>
-Package pdftex.def Info: img/LogoINCT.jpg  used on input line 142.
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 174.
 (pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
 File: img/LogoOdissea.jpg Graphic file (type jpg)
 <use img/LogoOdissea.jpg>
-Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 142.
-(pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
- [3 <./img/estilocodigo.pdf>] (datasetUpload.bbl)
-File: img/LogoINCT.jpg Graphic file (type jpg)
-<use img/LogoINCT.jpg>
-Package pdftex.def Info: img/LogoINCT.jpg  used on input line 163.
-(pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
-File: img/LogoOdissea.jpg Graphic file (type jpg)
-<use img/LogoOdissea.jpg>
-Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 163.
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 174.
 (pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
  [4 <./img/exportarsld.pdf>]
+<img/relacionamentos.pdf, id=83, 316.85107pt x 537.86028pt>
+File: img/relacionamentos.pdf Graphic file (type pdf)
+<use img/relacionamentos.pdf>
+Package pdftex.def Info: img/relacionamentos.pdf  used on input line 181.
+(pdftex.def)             Requested size: 227.62204pt x 386.39735pt.
 File: img/LogoINCT.jpg Graphic file (type jpg)
 <use img/LogoINCT.jpg>
-Package pdftex.def Info: img/LogoINCT.jpg  used on input line 163.
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 201.
 (pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
 File: img/LogoOdissea.jpg Graphic file (type jpg)
 <use img/LogoOdissea.jpg>
-Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 163.
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 201.
 (pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
- [5 <./img/metadado.pdf>] (datasetUpload.aux)
+ [5 <./img/metadado.pdf>]
+<img/criarmapa.pdf, id=99, 403.7214pt x 695.63269pt>
+File: img/criarmapa.pdf Graphic file (type pdf)
+<use img/criarmapa.pdf>
+Package pdftex.def Info: img/criarmapa.pdf  used on input line 204.
+(pdftex.def)             Requested size: 284.52756pt x 490.25128pt.
+ (datasetUpload.bbl)
+File: img/LogoINCT.jpg Graphic file (type jpg)
+<use img/LogoINCT.jpg>
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 212.
+(pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
+File: img/LogoOdissea.jpg Graphic file (type jpg)
+<use img/LogoOdissea.jpg>
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 212.
+(pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
+ [6 <./img/relacionamentos.pdf>]
+File: img/LogoINCT.jpg Graphic file (type jpg)
+<use img/LogoINCT.jpg>
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 212.
+(pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
+File: img/LogoOdissea.jpg Graphic file (type jpg)
+<use img/LogoOdissea.jpg>
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 212.
+(pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
+ [7 <./img/criarmapa.pdf>] (datasetUpload.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4381 strings out of 474423
- 74427 string characters out of 5737470
- 1933496 words of memory out of 5000000
- 26702 multiletter control sequences out of 15000+600000
- 569308 words of font info for 57 fonts, out of 8000000 for 9000
+ 5950 strings out of 474423
+ 104169 string characters out of 5737470
+ 1935496 words of memory out of 5000000
+ 28227 multiletter control sequences out of 15000+600000
+ 571441 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,15n,79p,323b,421s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,15n,79p,323b,425s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on datasetUpload.pdf (5 pages, 295493 bytes).
+Output written on datasetUpload.pdf (7 pages, 468467 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
+ 155 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

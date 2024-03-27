@@ -10,7 +10,7 @@
 % margem sup 3.5 cm: h� 1,5 cm para header, + 2 cm para top
 % margem inf 2.5 cm: h� 1,5 cm para foot, + 1 cm para bottom
 % margem esq/dir 3 cm
-\RequirePackage[a4paper,top=2.5cm,left=3cm,right=3cm,bottom=2.5cm,headheight=1.25cm,headsep=12pt,footskip=20pt]{geometry}
+\RequirePackage[a4paper,top=2cm,left=3cm,right=3cm,bottom=2.5cm,headheight=1.25cm,headsep=24pt,footskip=20pt]{geometry}
 
 \parindent 1.27cm
 \parskip   6pt
@@ -127,24 +127,24 @@
 
 \def\address#1{\gdef\@address{#1}}
 
-\def\@maketitle{\newpage
- %\null % isso dava um espaco extra antes do title
- \begin{center}
-   %\vglue -6pt
-%   \vspace*{12pt}
-\vspace*{-.7cm}
-  {\XVIPT\bf\@title\par}
-   \vglue 6pt plus 3pt minus 3pt
-  {\normalsize
-   \textbf{\begin{tabular}[t]{c}\@author\end{tabular}}\par}
-   \vglue 6pt plus 3pt minus 3pt
-  {\normalsize
-   \begin{tabular}[t]{c}\inst{\instnum}\@address\end{tabular}\par}
-   \vglue 6pt plus 3pt minus 3pt
-   \end{center}\par
-}
-\let\maketitleOLD\maketitle
-\renewcommand{\maketitle}{\maketitleOLD\thispagestyle{empty}}
+%\def\@maketitle{\newpage
+% %\null % isso dava um espaco extra antes do title
+% \begin{center}
+%   %\vglue -6pt
+%%   \vspace*{12pt}
+%\vspace*{-.7cm}
+%  {\XVIPT\bf\@title\par}
+%   \vglue 6pt plus 3pt minus 3pt
+%  {\normalsize
+%   \textbf{\begin{tabular}[t]{c}\@author\end{tabular}}\par}
+%   \vglue 6pt plus 3pt minus 3pt
+%  {\normalsize
+%   \begin{tabular}[t]{c}\inst{\instnum}\@address\end{tabular}\par}
+%   \vglue 6pt plus 3pt minus 3pt
+%   \end{center}\par
+%}
+%\let\maketitleOLD\maketitle
+%\renewcommand{\maketitle}{\maketitleOLD\thispagestyle{empty}}
 
 \renewenvironment{abstract}{%
       \list{}{\advance\topsep by6pt\relax%\small
