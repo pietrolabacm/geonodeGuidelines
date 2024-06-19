@@ -1,0 +1,185 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[brazil]{babel}
+\usepackage{hyperref}
+\usepackage{xcolor}
+%\usepackage[latin1]{inputenc}  
+
+\pagenumbering{gobble}                          % sets page numbering off
+\pagestyle{fancy}\setlength\headheight{100pt}   % set the pagestyle to fancy to include headers and footers
+\pagestyle{fancy}\setlength\textheight{650pt}
+\pagestyle{fancy}\setlength\footskip{20pt}
+\fancyhf{}                                      % clear the header and footer
+\renewcommand{\headrulewidth}{0pt}              % no horizontale ruler under header
+\fancyhead[L]{\includegraphics[width=3.8cm]{img/LogoINCT.jpg}}
+\fancyhead[R]{\includegraphics[width=3.8cm]{img/LogoOdissea.jpg}}
+
+\begin{document} 
+
+%\title{Guia para o carregamento de dados no Geonode Odisseia}
+%\date{}
+%\maketitle
+%\thispagestyle{fancy}
+
+\begin{center}
+  \vspace{12pt}
+  \Large\textbf{Guia para construção de páginas utilizando o app Home do Geonode}
+\end{center}
+
+\section{Introdução}
+
+Este documento define as funcionalidades do aplicativo Home para o Geonode e
+traz instruções para seu uso. O aplicativo foi criado com o objetivo de atender
+as demandas de customização do Geonode do INCT Odisseia de forma que a
+customização seja flexível, manejável e aceite futuras atualizações do Geonode.
+
+\section{Subsites} \label{sec:firstpage}
+
+O aplicativo Home estende as funcionalidades do aplicativo \textcolor{blue}{
+\href{https://github.com/geosolutions-it/geonode-subsites}{geonode-subsites}}
+que por sua vez é uma contribuição da comunidade ao Geonode. Este modulo
+permite a subdivisão de um catálogo do Geonode em subcatálogos sem a
+necessidade de se criar diferentes ambientes e subdividir os dados manualmente.
+
+\section{O aplicativo Home}
+
+O aplicativo Home permite que o administrador defina nome, descrição e imagem
+de visualização para cada subsite, para que então sejam expostos em uma
+homepage personalizada. Além disso, é possível adicionar categorias que, assim
+como os subsites, possuem nome, descrição e imagem de visualização para compor
+uma página de categorias para cada subsite.
+
+O módulo foi construído de forma que o administrador pode modificar os filtros
+e demais características dos subsites sem modificar o código-fonte do Geonode e
+de seus aplicativos. Apenas utilizando a interface gráfica do administrador do
+Django. Isso também permite que o módulo seja reutilizado em futuras
+atualizações do Geonode, a princípio sem nenhuma alteração.
+
+\subsection{Tipos de dados}
+
+O aplicativo cria duas tabelas no banco de dados que hospeda as informações
+utilizadas pelo Geonode, uma tabela para os subsites e uma para as categorias.
+Cada subsite gera uma entrada em sua tabela contendo 14 colunas, dentre elas 11
+colunas herdadas do aplicativo \textcolor{blue}{
+\href{https://github.com/geosolutions-it/geonode-subsites}{geonode-subsites}} e
+3 colunas exclusivas do aplicativo Home, estas são: "display\_ name",
+"display\_ description" e "display\_ image". 
+
+\begin{description}
+  \setlength\itemsep{1em}
+  \item[display\_name]
+    - Um objeto da classe 
+      \textcolor{blue}
+      {\href{https://docs.djangoproject.com/en/5.0/ref/models/fields/#django.db.models.CharField}
+      {CharField}} 
+    do Django que gera uma coluna do tipo VARCHAR na tabela do
+    banco de dados e possui um limite de 50 caracteres. Este nome será
+    exposto como o título do subsite na homepage do Geonode.
+    
+  \item[display\_description]
+  - Um objeto da classe 
+      \textcolor{blue}
+      {\href{https://docs.djangoproject.com/en/5.0/ref/models/fields/#django.db.models.CharField}
+      {CharField}} 
+    do Django que gera uma coluna do tipo VARCHAR com um limite de
+    50 caracteres. Este nome será exposto como a descrição do subsite na
+    homepage do Geonode.
+
+  \item[display\_image]
+  - Um objeto da classe
+      \textcolor{blue}
+      {\href{https://docs.djangoproject.com/en/5.0/ref/models/fields/#django.db.models.ImageField}
+      {ImageField}} 
+    do Django que gera uma coluna do tipo VARCHAR com um limite
+    de 100 caracteres contendo o caminho para a imagem dentro do volume de
+    armazenamento do Django. Esta imagem será exposta na homepage como a imagem
+    de referência do subsite. 
+\end{description}
+
+Cada categoria cria uma entrada em sua tabela com 6 colunas: "display\_name",
+"display\_description", "display\_image", "fk", "keyword" e
+"keywords\_filter\_url". As colunas de display possuem o mesmo comportamento da
+tabela de subsites e tem como propósito construir a página de categorias de
+cada subsite. Já as demais colunas relacionam a categoria a um subsite
+específico e definem as keywords utilizadas para filtrar o dado.
+
+\begin{description}
+  \setlength\itemsep{1em}
+
+  \item[fk]
+  - Um objeto da classe
+  \textcolor{blue}
+    {\href{https://docs.djangoproject.com/en/5.0/ref/models/fields/#django.db.models.ForeignKey}
+    {ForeignKey}}
+  do Django que gera uma coluna de relacionamento 1:N correlacionando a categoria com o índice de seu respectivo subsite. 
+
+  \item[keyword]
+  - Um objeto da classe
+    \textcolor{blue}
+    {\href{https://docs.djangoproject.com/en/5.0/ref/models/fields/#django.db.models.ManyToManyField}
+    {ManyToManyField}} 
+  do Django que gera uma coluna de relacionamento N:N que
+  correlaciona por meio de uma tabela intermediária uma categoria com um
+  grupo de keywords que podem ser utilizados como filtro. Esses keywords são do modelo de 
+    \textcolor{blue}
+    {\href{https://docs.geonode.org/en/master/admin/admin_panel/index.html#hierarchical-keywords}
+    {HierarchicalKeywords}}
+  do Geonode.
+
+  \item[keywords\_filter\_url]
+  - Um objeto da classe 
+    \textcolor{blue}
+    {\href{https://docs.djangoproject.com/en/5.0/ref/models/fields/#django.db.models.CharField}
+    {CharField}} 
+  do Django que gera uma coluna do tipo VARCHAR com um limite de
+  200 caracteres. Este campo não será editado manualmente pelo usuário, sendo
+  gerado automaticamente ao criar uma entrada na tabela utilizando a
+  interface gráfica do Django Admin. Seu propósito é armazenar e entregar os
+  parâmetros de filtragem definidos pela coluna keyword.
+\end{description}
+
+\subsection{Templates}
+
+Os templates das páginas utilizadas pelos subsites seguem a mesma 
+  \textcolor{blue}
+  {\href{https://github.com/geosolutions-it/geonode-subsites/tree/main?tab=readme-ov-file#folder-structure}
+  {organização}} 
+utilizada pelo geonode-subsites. Sendo possível personalizar a
+homepage através do arquivo "templates/index.html", a página de categorias
+através do arquivo "templates/subsites/common/categories.html" e páginas
+específicas de cada subsite através de arquivos na pasta
+"templates/subsites/\textit{nome\_do\_subsite}".
+
+A página inicial original do Geonode foi modificada para mostrar cartões de
+cada subsite registrado no aplicativo Home, esta página herda suas
+características da página original do Geonode então as funcionalidades de
+customização de tema também influenciam esta página
+(\textcolor{red}{\emph{CONFIRMAR}}). A página inicial de cada subsite foi
+modificada para mostrar cartões de cada categoria registrada no aplicativo
+Home, está página também herda da homepage original do Geonode e está sujeita
+às mesmas customizações.
+
+\section{Guia de cadastro de subsites e categorias}
+
+Nesta seção do texto será exposto um breve processo para a adição de um novo
+subsite e uma nova categoria através da interface gráfica de administrador do
+Django. 
+
+Para realizar o processo, o usuário deve ter acesso a uma credencial com
+permissões de administração (não necessariamente super usuário). Uma vez com a
+credencial correta, a página de administração pode ser acessada clicando no
+ícone do perfil do usuário e no submenu Admin. Os cadastros serão feitos sob os
+membros do grupo do aplicativo Home: Extended Subsites e Categories.
+
+\section{Extended Subsites}
+
+Na página de administração dos Extended Subsites é possível visualizar, editar,
+criar e excluir os subsites cadastrados.
+
+
+
+\end{document}
