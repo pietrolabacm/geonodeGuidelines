@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  19 JUN 2024 11:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  21 AUG 2024 13:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -267,8 +267,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count282
 \l__pdf_internal_box=\box52
-)
-No file homeApp.aux.
+) (homeApp.aux)
 \openout1 = `homeApp.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -289,6 +288,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -360,7 +360,7 @@ d:/p/geonodeGuidelines/homeApp/homeApp.tex:78: Illegal parameter number in defin
 <to be read again> 
                    d
 l.78       {CharField}}
-                       
+                        do Django que gera uma coluna do tipo VARCHAR na tab...
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
@@ -369,7 +369,7 @@ d:/p/geonodeGuidelines/homeApp/homeApp.tex:78: Illegal parameter number in defin
 <to be read again> 
                    d
 l.78       {CharField}}
-                       
+                        do Django que gera uma coluna do tipo VARCHAR na tab...
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
@@ -378,7 +378,7 @@ d:/p/geonodeGuidelines/homeApp/homeApp.tex:78: Illegal parameter number in defin
 <to be read again> 
                    d
 l.78       {CharField}}
-                       
+                        do Django que gera uma coluna do tipo VARCHAR na tab...
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
@@ -437,11 +437,11 @@ You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-d:/p/geonodeGuidelines/homeApp/homeApp.tex:109: Undefined control sequence.
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:101: Undefined control sequence.
 \@outputpage ...t@font \normalsize \normalsfcodes 
                                                   \let \label \@gobble \let ...
-l.109 
-      
+l.101 \end{description}
+                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -451,12 +451,12 @@ and I'll forget about whatever was undefined.
 <img/LogoINCT.jpg, id=8, 209.28188pt x 89.58469pt>
 File: img/LogoINCT.jpg Graphic file (type jpg)
 <use img/LogoINCT.jpg>
-Package pdftex.def Info: img/LogoINCT.jpg  used on input line 109.
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 101.
 (pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
 <img/LogoOdissea.jpg, id=9, 155.07938pt x 94.10156pt>
 File: img/LogoOdissea.jpg Graphic file (type jpg)
 <use img/LogoOdissea.jpg>
-Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 109.
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 101.
 (pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
 [1
 
@@ -465,7 +465,7 @@ d:/p/geonodeGuidelines/homeApp/homeApp.tex:117: Illegal parameter number in defi
 <to be read again> 
                    d
 l.117     {ForeignKey}}
-                       
+                        do Django que gera uma coluna de relacionamento 1:N
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
@@ -474,7 +474,7 @@ d:/p/geonodeGuidelines/homeApp/homeApp.tex:117: Illegal parameter number in defi
 <to be read again> 
                    d
 l.117     {ForeignKey}}
-                       
+                        do Django que gera uma coluna de relacionamento 1:N
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
@@ -483,61 +483,61 @@ d:/p/geonodeGuidelines/homeApp/homeApp.tex:117: Illegal parameter number in defi
 <to be read again> 
                    d
 l.117     {ForeignKey}}
-                       
+                        do Django que gera uma coluna de relacionamento 1:N
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-d:/p/geonodeGuidelines/homeApp/homeApp.tex:124: Illegal parameter number in definition of \Hy@tempa.
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:125: Illegal parameter number in definition of \Hy@tempa.
 <to be read again> 
                    d
-l.124     {ManyToManyField}}
-                            
+l.125     {ManyToManyField}}
+                             do Django que gera uma coluna de relacionamento...
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-d:/p/geonodeGuidelines/homeApp/homeApp.tex:124: Illegal parameter number in definition of \Hy@tempa.
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:125: Illegal parameter number in definition of \Hy@tempa.
 <to be read again> 
                    d
-l.124     {ManyToManyField}}
-                            
+l.125     {ManyToManyField}}
+                             do Django que gera uma coluna de relacionamento...
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-d:/p/geonodeGuidelines/homeApp/homeApp.tex:124: Illegal parameter number in definition of \Hy@tempa.
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:125: Illegal parameter number in definition of \Hy@tempa.
 <to be read again> 
                    d
-l.124     {ManyToManyField}}
-                            
+l.125     {ManyToManyField}}
+                             do Django que gera uma coluna de relacionamento...
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-d:/p/geonodeGuidelines/homeApp/homeApp.tex:130: Illegal parameter number in definition of \Hy@tempa.
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:131: Illegal parameter number in definition of \Hy@tempa.
 <to be read again> 
                    h
-l.130     {HierarchicalKeywords}}
-                                 
+l.131     {HierarchicalKeywords}}
+                                  do Geonode. Atributo obrigatório.
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-d:/p/geonodeGuidelines/homeApp/homeApp.tex:130: Illegal parameter number in definition of \Hy@tempa.
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:131: Illegal parameter number in definition of \Hy@tempa.
 <to be read again> 
                    h
-l.130     {HierarchicalKeywords}}
-                                 
+l.131     {HierarchicalKeywords}}
+                                  do Geonode. Atributo obrigatório.
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-d:/p/geonodeGuidelines/homeApp/homeApp.tex:130: Illegal parameter number in definition of \Hy@tempa.
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:131: Illegal parameter number in definition of \Hy@tempa.
 <to be read again> 
                    h
-l.130     {HierarchicalKeywords}}
-                                 
+l.131     {HierarchicalKeywords}}
+                                  do Geonode. Atributo obrigatório.
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
@@ -546,7 +546,7 @@ d:/p/geonodeGuidelines/homeApp/homeApp.tex:137: Illegal parameter number in defi
 <to be read again> 
                    d
 l.137     {CharField}}
-                      
+                       do Django que gera uma coluna do tipo VARCHAR com um ...
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
@@ -555,7 +555,7 @@ d:/p/geonodeGuidelines/homeApp/homeApp.tex:137: Illegal parameter number in defi
 <to be read again> 
                    d
 l.137     {CharField}}
-                      
+                       do Django que gera uma coluna do tipo VARCHAR com um ...
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
@@ -564,52 +564,116 @@ d:/p/geonodeGuidelines/homeApp/homeApp.tex:137: Illegal parameter number in defi
 <to be read again> 
                    d
 l.137     {CharField}}
-                      
+                       do Django que gera uma coluna do tipo VARCHAR com um ...
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-d:/p/geonodeGuidelines/homeApp/homeApp.tex:150: Illegal parameter number in definition of \Hy@tempa.
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:149: Illegal parameter number in definition of \Hy@tempa.
 <to be read again> 
                    f
-l.150   {organização}}
+l.149   {organização}}
                         
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-d:/p/geonodeGuidelines/homeApp/homeApp.tex:150: Illegal parameter number in definition of \Hy@tempa.
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:149: Illegal parameter number in definition of \Hy@tempa.
 <to be read again> 
                    f
-l.150   {organização}}
+l.149   {organização}}
                         
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-d:/p/geonodeGuidelines/homeApp/homeApp.tex:150: Illegal parameter number in definition of \Hy@tempa.
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:149: Illegal parameter number in definition of \Hy@tempa.
 <to be read again> 
                    f
-l.150   {organização}}
+l.149   {organização}}
                         
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
 
-Overfull \hbox (87.18666pt too wide) in paragraph at lines 147--156
-\OT1/ptm/m/n/12 pla-tes/index.html", a p[]agina de ca-te-go-rias atrav[]es do ar-quivo "tem-pla-tes/subsites/common/categories.html"e
- []
+LaTeX Warning: Hyper reference `fig:acessoExtendedSubSite' on page  undefined on input line 175.
 
 
-Overfull \hbox (57.43898pt too wide) in paragraph at lines 147--156
-\OT1/ptm/m/n/12 p[]aginas es-pec[]^^Pficas de cada sub-site atrav[]es de ar-qui-vos na pasta "tem-pla-tes/subsites/\OT1/ptm/m/it/12 nome[]do[]subsite\OT1/ptm/m/n/12 ". 
- []
+LaTeX Warning: Reference `fig:acessoExtendedSubSite' on page  undefined on input line 175.
 
-d:/p/geonodeGuidelines/homeApp/homeApp.tex:185: Undefined control sequence.
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:177: Undefined control sequence.
 \@outputpage ...t@font \normalsize \normalsfcodes 
                                                   \let \label \@gobble \let ...
-l.185 \end{document}
+l.177 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: img/LogoINCT.jpg Graphic file (type jpg)
+<use img/LogoINCT.jpg>
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 177.
+(pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
+File: img/LogoOdissea.jpg Graphic file (type jpg)
+<use img/LogoOdissea.jpg>
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 177.
+(pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.177 
+       [2]
+
+LaTeX Warning: Hyper reference `fig:acessoExtendedSubSite' on page  undefined on input line 184.
+
+
+LaTeX Warning: Reference `fig:acessoExtendedSubSite' on page  undefined on input line 184.
+
+<img/acessoExtendedSubSites.pdf, id=32, 488.50287pt x 346.42136pt>
+File: img/acessoExtendedSubSites.pdf Graphic file (type pdf)
+<use img/acessoExtendedSubSites.pdf>
+Package pdftex.def Info: img/acessoExtendedSubSites.pdf  used on input line 188.
+(pdftex.def)             Requested size: 426.79135pt x 302.65805pt.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 189.
+(C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+)
+
+LaTeX Warning: Hyper reference `sec:tiposDeDados' on page  undefined on input line 194.
+
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:206: Undefined control sequence.
+\@outputpage ...t@font \normalsize \normalsfcodes 
+                                                  \let \label \@gobble \let ...
+l.206   \item[Display Name]
+                            - Nome que será apresentado nos cartões da pá...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: img/LogoINCT.jpg Graphic file (type jpg)
+<use img/LogoINCT.jpg>
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 206.
+(pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
+File: img/LogoOdissea.jpg Graphic file (type jpg)
+<use img/LogoOdissea.jpg>
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 206.
+(pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.206   \item[Display Name]
+                            - Nome que será apresentado nos cartões da pá... [3 <./img/acessoExtendedSubSites.pdf>]
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:220: Undefined control sequence.
+\@outputpage ...t@font \normalsize \normalsfcodes 
+                                                  \let \label \@gobble \let ...
+l.220 \end{document}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -619,47 +683,25 @@ and I'll forget about whatever was undefined.
 
 File: img/LogoINCT.jpg Graphic file (type jpg)
 <use img/LogoINCT.jpg>
-Package pdftex.def Info: img/LogoINCT.jpg  used on input line 185.
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 220.
 (pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
 File: img/LogoOdissea.jpg Graphic file (type jpg)
 <use img/LogoOdissea.jpg>
-Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 185.
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 220.
 (pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.185 \end{document}
-                     [2]
-d:/p/geonodeGuidelines/homeApp/homeApp.tex:185: Undefined control sequence.
-\@outputpage ...t@font \normalsize \normalsfcodes 
-                                                  \let \label \@gobble \let ...
-l.185 \end{document}
-                    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-File: img/LogoINCT.jpg Graphic file (type jpg)
-<use img/LogoINCT.jpg>
-Package pdftex.def Info: img/LogoINCT.jpg  used on input line 185.
-(pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
-File: img/LogoOdissea.jpg Graphic file (type jpg)
-<use img/LogoOdissea.jpg>
-Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 185.
-(pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.185 \end{document}
-                     [3] (homeApp.aux)
+l.220 \end{document}
+                     [4] (homeApp.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -671,20 +713,20 @@ Package rerunfilecheck Warning: File `homeApp.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `homeApp.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  71D12B96B43B147A347EECB04B31D549;948.
+(rerunfilecheck)             After:  4E69E66AD4696BAE057FDD777CE04592;962.
  ) 
 Here is how much of TeX's memory you used:
- 12227 strings out of 474423
- 199755 string characters out of 5737470
- 1946496 words of memory out of 5000000
- 34440 multiletter control sequences out of 15000+600000
- 569966 words of font info for 57 fonts, out of 8000000 for 9000
+ 12314 strings out of 474423
+ 201280 string characters out of 5737470
+ 1945496 words of memory out of 5000000
+ 34518 multiletter control sequences out of 15000+600000
+ 572811 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,79p,311b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on homeApp.pdf (3 pages, 79203 bytes).
+ 75i,15n,79p,317b,526s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on homeApp.pdf (4 pages, 151083 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

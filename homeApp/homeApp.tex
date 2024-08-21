@@ -59,7 +59,7 @@ de seus aplicativos. Apenas utilizando a interface gráfica do administrador do
 Django. Isso também permite que o módulo seja reutilizado em futuras
 atualizações do Geonode, a princípio sem nenhuma alteração.
 
-\subsection{Tipos de dados}
+\subsection{Tipos de dados}\label{sec:tiposDeDados}
 
 O aplicativo cria duas tabelas no banco de dados que hospeda as informações
 utilizadas pelo Geonode, uma tabela para os subsites e uma para as categorias.
@@ -75,10 +75,10 @@ colunas herdadas do aplicativo \textcolor{blue}{
     - Um objeto da classe 
       \textcolor{blue}
       {\href{https://docs.djangoproject.com/en/5.0/ref/models/fields/#django.db.models.CharField}
-      {CharField}} 
-    do Django que gera uma coluna do tipo VARCHAR na tabela do
-    banco de dados e possui um limite de 50 caracteres. Este nome será
-    exposto como o título do subsite na homepage do Geonode.
+      {CharField}} do Django que gera uma coluna do tipo VARCHAR na tabela do
+      banco de dados e possui um limite de 50 caracteres. Este nome será
+      exposto como o título do subsite na homepage do Geonode e é um atributo
+      obrigatório.
     
   \item[display\_description]
   - Um objeto da classe 
@@ -114,32 +114,31 @@ específico e definem as keywords utilizadas para filtrar o dado.
   - Um objeto da classe
   \textcolor{blue}
     {\href{https://docs.djangoproject.com/en/5.0/ref/models/fields/#django.db.models.ForeignKey}
-    {ForeignKey}}
-  do Django que gera uma coluna de relacionamento 1:N correlacionando a categoria com o índice de seu respectivo subsite. 
+    {ForeignKey}} do Django que gera uma coluna de relacionamento 1:N
+    correlacionando a categoria com o índice de seu respectivo subsite.
+    Atributo obrigatório.
 
   \item[keyword]
   - Um objeto da classe
     \textcolor{blue}
     {\href{https://docs.djangoproject.com/en/5.0/ref/models/fields/#django.db.models.ManyToManyField}
-    {ManyToManyField}} 
-  do Django que gera uma coluna de relacionamento N:N que
-  correlaciona por meio de uma tabela intermediária uma categoria com um
-  grupo de keywords que podem ser utilizados como filtro. Esses keywords são do modelo de 
+    {ManyToManyField}} do Django que gera uma coluna de relacionamento N:N que
+    correlaciona por meio de uma tabela intermediária uma categoria com um
+    grupo de keywords que podem ser utilizados como filtro. Esses keywords são
+    do modelo de 
     \textcolor{blue}
     {\href{https://docs.geonode.org/en/master/admin/admin_panel/index.html#hierarchical-keywords}
-    {HierarchicalKeywords}}
-  do Geonode.
+    {HierarchicalKeywords}} do Geonode. Atributo obrigatório.
 
   \item[keywords\_filter\_url]
   - Um objeto da classe 
     \textcolor{blue}
     {\href{https://docs.djangoproject.com/en/5.0/ref/models/fields/#django.db.models.CharField}
-    {CharField}} 
-  do Django que gera uma coluna do tipo VARCHAR com um limite de
-  200 caracteres. Este campo não será editado manualmente pelo usuário, sendo
-  gerado automaticamente ao criar uma entrada na tabela utilizando a
-  interface gráfica do Django Admin. Seu propósito é armazenar e entregar os
-  parâmetros de filtragem definidos pela coluna keyword.
+    {CharField}} do Django que gera uma coluna do tipo VARCHAR com um limite de
+    200 caracteres. Este campo não será editado manualmente pelo usuário, sendo
+    gerado automaticamente ao criar uma entrada na tabela utilizando a
+    interface gráfica do Django Admin. Seu propósito é armazenar os parâmetros
+    de filtragem definidos pela coluna keyword.
 \end{description}
 
 \subsection{Templates}
@@ -150,7 +149,7 @@ Os templates das páginas utilizadas pelos subsites seguem a mesma
   {organização}} 
 utilizada pelo geonode-subsites. Sendo possível personalizar a
 homepage através do arquivo "templates/index.html", a página de categorias
-através do arquivo "templates/subsites/common/categories.html" e páginas
+através do arquivo "templates /subsites /common /categories.html" e páginas
 específicas de cada subsite através de arquivos na pasta
 "templates/subsites/\textit{nome\_do\_subsite}".
 
@@ -172,14 +171,50 @@ Django.
 Para realizar o processo, o usuário deve ter acesso a uma credencial com
 permissões de administração (não necessariamente super usuário). Uma vez com a
 credencial correta, a página de administração pode ser acessada clicando no
-ícone do perfil do usuário e no submenu Admin. Os cadastros serão feitos sob os
-membros do grupo do aplicativo Home: Extended Subsites e Categories.
+ícone do perfil do usuário e no submenu Admin (Figura
+\Ref{fig:acessoExtendedSubSite}.1). Os cadastros serão feitos sob os membros do
+grupo do aplicativo Home: Extended Subsites e Categories.
 
-\section{Extended Subsites}
+\subsection{Extended Subsites}
 
 Na página de administração dos Extended Subsites é possível visualizar, editar,
-criar e excluir os subsites cadastrados.
+criar e excluir os subsites cadastrados. Para visualizar ou editar um subsite
+basta clicar em seu nome e para excluí-lo selecione sua caixa e no menu
+drop-down no canto inferior esquerdo selecione excluir e confirme. Para criar um novo subsite clique no botão "adicionar extended sub site" no
+canto superior direito (Figura \Ref{fig:acessoExtendedSubSite}.3). 
 
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth, keepaspectratio]{img/acessoExtendedSubSites.pdf}
+  \caption{Acesso à administração do subsites na interface de administrador do geonode e acessando a página de criação de um novo subsite.}\label{fig:acessoExtendedSubSite}
+\end{figure}
 
+Uma vez na tela de criação de subsite basta preencher os campos dos atributos
+com os dados apropriados, mais informações sobre estes campos podem ser
+encontradas na \hyperref[sec:tiposDeDados]{seção Tipos de Dados}. Nos campos de
+filtro, caso nenhum atributo para filtro seja selecionado todos os elementos
+serão considerados, se um ou mais atributos forem selecionados, apenas recursos
+com aqueles atributos serão mostrados no subsite. Por fim salve as alterações
+usando o botão "Salvar" no canto inferior direito.
+
+Campos a serem preenchidos:
+
+\begin{description}
+  \setlength\itemsep{2em}
+
+  \item[Site name] - Nome do sub site em forma de slug (nome em formatação apropriada para a url, exemplo: nome-do-site).
+  \item[Display Name] - Nome que será apresentado nos cartões da página inicial
+  \item[Display Description] - Descrição que será apresentada nos cartões da página inicial
+  \item[Display image] - Imagem que será apresentada nos cartões da página inicial
+  \item[Theme] - Tema a ser utilizado pelo subsite. Deve ser selecionado entre os temas existentes, ou mantido vazio para usar o padrão do Geonode.  
+  \item[Logo] - Imagem de logo do subsite, sobrescreve o logo usado no tema \textcolor{red}{CONFIRMAR}.
+  \item[Subsite description] - Descrição do subsite, só pode ser visualizado dentro do menu de administração.
+  \item[Types] - Tipos de dado contidos no subsite.
+  \item[Region] - Regiões classificadas contidas no subsite.
+  \item[Categoria] - Categorias de dados contidas no subsite.
+  \item[Keyword] - Palavras-chave dos dados contidas no subsite.
+  \item[Grupo] - Grupos que podem ter seus dados disponibilizados no subsite.
+  \item[Allowed permissions] - Permissões para os usuários que acessam o site. Se nenhuma permissão for selecionada, os usuários terão acesso a visualização e download por padrão. 
+\end{description}
 
 \end{document}
