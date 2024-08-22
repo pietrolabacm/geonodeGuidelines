@@ -180,8 +180,9 @@ grupo do aplicativo Home: Extended Subsites e Categories.
 Na página de administração dos Extended Subsites é possível visualizar, editar,
 criar e excluir os subsites cadastrados. Para visualizar ou editar um subsite
 basta clicar em seu nome e para excluí-lo selecione sua caixa e no menu
-drop-down no canto inferior esquerdo selecione excluir e confirme. Para criar um novo subsite clique no botão "adicionar extended sub site" no
-canto superior direito (Figura \Ref{fig:acessoExtendedSubSite}.3). 
+drop-down no canto inferior esquerdo selecione excluir e confirme. Para criar
+um novo subsite clique no botão "adicionar extended sub site" no canto superior
+direito (Figura \Ref{fig:acessoExtendedSubSite}.3). 
 
 \begin{figure}[ht]
   \centering
@@ -190,31 +191,78 @@ canto superior direito (Figura \Ref{fig:acessoExtendedSubSite}.3).
 \end{figure}
 
 Uma vez na tela de criação de subsite basta preencher os campos dos atributos
-com os dados apropriados, mais informações sobre estes campos podem ser
-encontradas na \hyperref[sec:tiposDeDados]{seção Tipos de Dados}. Nos campos de
-filtro, caso nenhum atributo para filtro seja selecionado todos os elementos
-serão considerados, se um ou mais atributos forem selecionados, apenas recursos
-com aqueles atributos serão mostrados no subsite. Por fim salve as alterações
+com os dados apropriados (Figura \Ref{fig:criarExtendedSubSites}), mais
+informações sobre estes campos podem ser encontradas na
+\hyperref[sec:tiposDeDados]{seção Tipos de Dados}. Nos campos de filtro, caso
+nenhum atributo para filtro seja selecionado todos os elementos serão
+considerados, se um ou mais atributos forem selecionados, apenas recursos com
+aqueles atributos serão mostrados no subsite. Por fim salve as alterações
 usando o botão "Salvar" no canto inferior direito.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth, keepaspectratio]{img/criarExtendedSubSites.pdf}
+  \caption{Tela de criação de subsites.}\label{fig:criarExtendedSubSites}
+\end{figure}
 
 Campos a serem preenchidos:
 
 \begin{description}
-  \setlength\itemsep{2em}
-
-  \item[Site name] - Nome do sub site em forma de slug (nome em formatação apropriada para a url, exemplo: nome-do-site).
-  \item[Display Name] - Nome que será apresentado nos cartões da página inicial
-  \item[Display Description] - Descrição que será apresentada nos cartões da página inicial
-  \item[Display image] - Imagem que será apresentada nos cartões da página inicial
-  \item[Theme] - Tema a ser utilizado pelo subsite. Deve ser selecionado entre os temas existentes, ou mantido vazio para usar o padrão do Geonode.  
-  \item[Logo] - Imagem de logo do subsite, sobrescreve o logo usado no tema \textcolor{red}{CONFIRMAR}.
-  \item[Subsite description] - Descrição do subsite, só pode ser visualizado dentro do menu de administração.
-  \item[Types] - Tipos de dado contidos no subsite.
+  \setlength\itemsep{1em}
+  
+  \item[Site name] - Nome do subsite no formato slug (nome formatado para uso em URL, exemplo: nome-do-site).
+  
+  \item[Display Name] - Nome exibido nos cartões na página inicial.
+  
+  \item[Display Description] - Descrição exibida nos cartões na página inicial.
+  
+  \item[Display image] - Imagem exibida nos cartões na página inicial.
+  
+  \item[Theme] - Tema a ser utilizado pelo subsite. Deve ser escolhido entre os temas disponíveis ou mantido vazio para usar o tema padrão do Geonode.
+  
+  \item[Logo] - Imagem de logo do subsite, que substitui o logo usado no tema \textcolor{red}{CONFIRMAR}.
+  
+  \item[Subsite description] - Descrição do subsite, visível apenas no menu de administração.
+  
+  \item[Types] - Tipos de dados contidos no subsite.
+  
   \item[Region] - Regiões classificadas contidas no subsite.
-  \item[Categoria] - Categorias de dados contidas no subsite.
-  \item[Keyword] - Palavras-chave dos dados contidas no subsite.
-  \item[Grupo] - Grupos que podem ter seus dados disponibilizados no subsite.
-  \item[Allowed permissions] - Permissões para os usuários que acessam o site. Se nenhuma permissão for selecionada, os usuários terão acesso a visualização e download por padrão. 
+  
+  \item[Category] - Categorias de dados contidas no subsite.
+  
+  \item[Keyword] - Palavras-chave associadas aos dados contidos no subsite.
+  
+  \item[Group] - Grupos que podem ter seus dados disponibilizados no subsite.
+  
+  \item[Allowed permissions] - Permissões para os usuários que acessam o site. Se nenhuma permissão for selecionada, os usuários terão, por padrão, acesso à visualização e ao download.
+  \end{description}
+
+\subsection{Categories}
+
+Semelhante ao Extended Subsites, na página "Categories", o usuário pode
+visualizar, editar, excluir e adicionar novas categorias à página inicial. O
+processo de criação é semelhante ao dos subsites com exceção de que um número
+reduzido de campos deve ser preenchido (Figura \Ref{fig:criarCategoria}). Os
+demais campos, que não estão presentes na criação da categoria, são herdados do
+subsite no qual a categoria está inserida.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth, keepaspectratio]{img/criarCategoria.pdf}
+  \caption{Tela de criação de categorias.}\label{fig:criarCategoria}
+\end{figure}
+
+Os campos a serem preenchidos são:
+
+\begin{description}
+  \setlength\itemsep{1em}
+
+  \item[Subsite] - Referência ao subsite o qual a categoria está atrelada.
+  \item[Display Name] - Nome exibido nos cartões da página inicial.
+  \item[Display Description] - Descrição exibida nos cartões da página inicial.
+  \item[Display image] - Imagem exibida nos cartões da página inicial.
+  \item[Keyword] - Palavras-chave dos dados contidas na categoria.
+  
 \end{description}
 
 \end{document}

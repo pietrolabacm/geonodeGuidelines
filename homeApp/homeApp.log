@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  21 AUG 2024 13:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  22 AUG 2024 09:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -346,6 +346,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 21.
+ (homeApp.out) (homeApp.out)
 \@outlinefile=\write3
 \openout3 = `homeApp.out'.
 
@@ -448,12 +449,12 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<img/LogoINCT.jpg, id=8, 209.28188pt x 89.58469pt>
+<img/LogoINCT.jpg, id=40, 209.28188pt x 89.58469pt>
 File: img/LogoINCT.jpg Graphic file (type jpg)
 <use img/LogoINCT.jpg>
 Package pdftex.def Info: img/LogoINCT.jpg  used on input line 101.
 (pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
-<img/LogoOdissea.jpg, id=9, 155.07938pt x 94.10156pt>
+<img/LogoOdissea.jpg, id=41, 155.07938pt x 94.10156pt>
 File: img/LogoOdissea.jpg Graphic file (type jpg)
 <use img/LogoOdissea.jpg>
 Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 101.
@@ -596,12 +597,6 @@ You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-
-LaTeX Warning: Hyper reference `fig:acessoExtendedSubSite' on page  undefined on input line 175.
-
-
-LaTeX Warning: Reference `fig:acessoExtendedSubSite' on page  undefined on input line 175.
-
 d:/p/geonodeGuidelines/homeApp/homeApp.tex:177: Undefined control sequence.
 \@outputpage ...t@font \normalsize \normalsfcodes 
                                                   \let \label \@gobble \let ...
@@ -627,29 +622,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
                    \relax 
 l.177 
        [2]
-
-LaTeX Warning: Hyper reference `fig:acessoExtendedSubSite' on page  undefined on input line 184.
-
-
-LaTeX Warning: Reference `fig:acessoExtendedSubSite' on page  undefined on input line 184.
-
-<img/acessoExtendedSubSites.pdf, id=32, 488.50287pt x 346.42136pt>
+<img/acessoExtendedSubSites.pdf, id=60, 488.50287pt x 346.42136pt>
 File: img/acessoExtendedSubSites.pdf Graphic file (type pdf)
 <use img/acessoExtendedSubSites.pdf>
-Package pdftex.def Info: img/acessoExtendedSubSites.pdf  used on input line 188.
+Package pdftex.def Info: img/acessoExtendedSubSites.pdf  used on input line 189.
 (pdftex.def)             Requested size: 426.79135pt x 302.65805pt.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 189.
-(C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 190.
+ (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
+<img/criarExtendedSubSites.pdf, id=63, 458.35585pt x 407.2995pt>
+File: img/criarExtendedSubSites.pdf Graphic file (type pdf)
+<use img/criarExtendedSubSites.pdf>
+Package pdftex.def Info: img/criarExtendedSubSites.pdf  used on input line 204.
+(pdftex.def)             Requested size: 426.79135pt x 379.25694pt.
 
-LaTeX Warning: Hyper reference `sec:tiposDeDados' on page  undefined on input line 194.
-
-d:/p/geonodeGuidelines/homeApp/homeApp.tex:206: Undefined control sequence.
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:215: Undefined control sequence.
 \@outputpage ...t@font \normalsize \normalsfcodes 
                                                   \let \label \@gobble \let ...
-l.206   \item[Display Name]
-                            - Nome que será apresentado nos cartões da pá...
+l.215   \item[Display Name]
+                            - Nome exibido nos cartões na página inicial.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -658,22 +650,78 @@ and I'll forget about whatever was undefined.
 
 File: img/LogoINCT.jpg Graphic file (type jpg)
 <use img/LogoINCT.jpg>
-Package pdftex.def Info: img/LogoINCT.jpg  used on input line 206.
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 215.
 (pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
 File: img/LogoOdissea.jpg Graphic file (type jpg)
 <use img/LogoOdissea.jpg>
-Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 206.
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 215.
 (pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.206   \item[Display Name]
-                            - Nome que será apresentado nos cartões da pá... [3 <./img/acessoExtendedSubSites.pdf>]
-d:/p/geonodeGuidelines/homeApp/homeApp.tex:220: Undefined control sequence.
+l.215   \item[Display Name]
+                            - Nome exibido nos cartões na página inicial. [3 <./img/acessoExtendedSubSites.pdf>]
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:231: Undefined control sequence.
 \@outputpage ...t@font \normalsize \normalsfcodes 
                                                   \let \label \@gobble \let ...
-l.220 \end{document}
+l.231   \item[Category]
+                        - Categorias de dados contidas no subsite.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: img/LogoINCT.jpg Graphic file (type jpg)
+<use img/LogoINCT.jpg>
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 231.
+(pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
+File: img/LogoOdissea.jpg Graphic file (type jpg)
+<use img/LogoOdissea.jpg>
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 231.
+(pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.231   \item[Category]
+                        - Categorias de dados contidas no subsite. [4 <./img/criarExtendedSubSites.pdf>]
+<img/criarCategoria.pdf, id=95, 457.57466pt x 307.38391pt>
+File: img/criarCategoria.pdf Graphic file (type pdf)
+<use img/criarCategoria.pdf>
+Package pdftex.def Info: img/criarCategoria.pdf  used on input line 251.
+(pdftex.def)             Requested size: 426.79135pt x 286.70833pt.
+
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:264: Undefined control sequence.
+\@outputpage ...t@font \normalsize \normalsfcodes 
+                                                  \let \label \@gobble \let ...
+l.264   \item[Keyword]
+                       - Palavras-chave dos dados contidas na categoria.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: img/LogoINCT.jpg Graphic file (type jpg)
+<use img/LogoINCT.jpg>
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 264.
+(pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
+File: img/LogoOdissea.jpg Graphic file (type jpg)
+<use img/LogoOdissea.jpg>
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 264.
+(pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.264   \item[Keyword]
+                       - Palavras-chave dos dados contidas na categoria. [5 <./img/criarCategoria.pdf>]
+d:/p/geonodeGuidelines/homeApp/homeApp.tex:268: Undefined control sequence.
+\@outputpage ...t@font \normalsize \normalsfcodes 
+                                                  \let \label \@gobble \let ...
+l.268 \end{document}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -683,50 +731,37 @@ and I'll forget about whatever was undefined.
 
 File: img/LogoINCT.jpg Graphic file (type jpg)
 <use img/LogoINCT.jpg>
-Package pdftex.def Info: img/LogoINCT.jpg  used on input line 220.
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 268.
 (pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
 File: img/LogoOdissea.jpg Graphic file (type jpg)
 <use img/LogoOdissea.jpg>
-Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 220.
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 268.
 (pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.220 \end{document}
-                     [4] (homeApp.aux)
+l.268 \end{document}
+                     [6] (homeApp.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `homeApp.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `homeApp.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  4E69E66AD4696BAE057FDD777CE04592;962.
+Package rerunfilecheck Info: File `homeApp.out' has not changed.
+(rerunfilecheck)             Checksum: 10488F6ABECA56B6C4AC95938B86E988;1069.
  ) 
 Here is how much of TeX's memory you used:
- 12314 strings out of 474423
- 201280 string characters out of 5737470
+ 12349 strings out of 474423
+ 202138 string characters out of 5737470
  1945496 words of memory out of 5000000
- 34518 multiletter control sequences out of 15000+600000
+ 34546 multiletter control sequences out of 15000+600000
  572811 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,79p,317b,526s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,15n,79p,339b,526s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on homeApp.pdf (4 pages, 151083 bytes).
+Output written on homeApp.pdf (6 pages, 225291 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 PDF objects out of 1000 (max. 8388607)
+ 13 named destinations out of 1000 (max. 500000)
+ 90 words of extra memory for PDF output out of 10000 (max. 10000000)
 
