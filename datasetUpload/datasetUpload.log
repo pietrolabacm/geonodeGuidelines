@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  27 MAR 2024 09:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  27 AUG 2024 15:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -168,14 +168,14 @@ LaTeX Font Info:    ... okay on input line 19.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
-* v-part:(T,H,B)=(42.67912pt, 731.23584pt, 71.13188pt)
+* v-part:(T,H,B)=(56.9055pt, 717.00946pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=426.79135pt
 * \textheight=650.0pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
-* \topmargin=-89.1568pt
+* \topmargin=-74.93042pt
 * \headheight=100.0pt
 * \headsep=24.0pt
 * \topskip=12.0pt
@@ -291,69 +291,72 @@ File: img/exportarsld.pdf Graphic file (type pdf)
 <use img/exportarsld.pdf>
 Package pdftex.def Info: img/exportarsld.pdf  used on input line 121.
 (pdftex.def)             Requested size: 284.52756pt x 380.58687pt.
-<img/metadado.pdf, id=42, 410.95264pt x 442.65083pt>
-File: img/metadado.pdf Graphic file (type pdf)
-<use img/metadado.pdf>
-Package pdftex.def Info: img/metadado.pdf  used on input line 139.
-(pdftex.def)             Requested size: 284.52756pt x 306.48308pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: img/LogoINCT.jpg Graphic file (type jpg)
 <use img/LogoINCT.jpg>
-Package pdftex.def Info: img/LogoINCT.jpg  used on input line 147.
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 138.
 (pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
 File: img/LogoOdissea.jpg Graphic file (type jpg)
 <use img/LogoOdissea.jpg>
-Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 147.
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 138.
 (pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
  [3 <./img/estilocodigo.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 149.
+<img/metadado.pdf, id=65, 410.95264pt x 442.65083pt>
+File: img/metadado.pdf Graphic file (type pdf)
+<use img/metadado.pdf>
+Package pdftex.def Info: img/metadado.pdf  used on input line 146.
+(pdftex.def)             Requested size: 284.52756pt x 306.48308pt.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 156.
  (C:\Users\pietro.menezes\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 File: img/LogoINCT.jpg Graphic file (type jpg)
 <use img/LogoINCT.jpg>
-Package pdftex.def Info: img/LogoINCT.jpg  used on input line 174.
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 162.
 (pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
 File: img/LogoOdissea.jpg Graphic file (type jpg)
 <use img/LogoOdissea.jpg>
-Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 174.
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 162.
 (pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
  [4 <./img/exportarsld.pdf>]
 <img/relacionamentos.pdf, id=83, 316.85107pt x 537.86028pt>
 File: img/relacionamentos.pdf Graphic file (type pdf)
 <use img/relacionamentos.pdf>
-Package pdftex.def Info: img/relacionamentos.pdf  used on input line 181.
+Package pdftex.def Info: img/relacionamentos.pdf  used on input line 188.
 (pdftex.def)             Requested size: 227.62204pt x 386.39735pt.
 File: img/LogoINCT.jpg Graphic file (type jpg)
 <use img/LogoINCT.jpg>
-Package pdftex.def Info: img/LogoINCT.jpg  used on input line 201.
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 191.
 (pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
 File: img/LogoOdissea.jpg Graphic file (type jpg)
 <use img/LogoOdissea.jpg>
-Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 201.
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 191.
 (pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
  [5 <./img/metadado.pdf>]
 <img/criarmapa.pdf, id=99, 403.7214pt x 695.63269pt>
 File: img/criarmapa.pdf Graphic file (type pdf)
 <use img/criarmapa.pdf>
-Package pdftex.def Info: img/criarmapa.pdf  used on input line 204.
+Package pdftex.def Info: img/criarmapa.pdf  used on input line 211.
 (pdftex.def)             Requested size: 284.52756pt x 490.25128pt.
  (datasetUpload.bbl)
 File: img/LogoINCT.jpg Graphic file (type jpg)
 <use img/LogoINCT.jpg>
-Package pdftex.def Info: img/LogoINCT.jpg  used on input line 212.
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 219.
 (pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
 File: img/LogoOdissea.jpg Graphic file (type jpg)
 <use img/LogoOdissea.jpg>
-Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 212.
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 219.
 (pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
  [6 <./img/relacionamentos.pdf>]
 File: img/LogoINCT.jpg Graphic file (type jpg)
 <use img/LogoINCT.jpg>
-Package pdftex.def Info: img/LogoINCT.jpg  used on input line 212.
+Package pdftex.def Info: img/LogoINCT.jpg  used on input line 219.
 (pdftex.def)             Requested size: 108.12054pt x 46.28082pt.
 File: img/LogoOdissea.jpg Graphic file (type jpg)
 <use img/LogoOdissea.jpg>
-Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 212.
+Package pdftex.def Info: img/LogoOdissea.jpg  used on input line 219.
 (pdftex.def)             Requested size: 108.12054pt x 65.60643pt.
  [7 <./img/criarmapa.pdf>] (datasetUpload.aux)
  ***********
@@ -362,15 +365,15 @@ L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5950 strings out of 474423
- 104169 string characters out of 5737470
- 1935496 words of memory out of 5000000
- 28227 multiletter control sequences out of 15000+600000
+ 5951 strings out of 474423
+ 104177 string characters out of 5737470
+ 1934496 words of memory out of 5000000
+ 28228 multiletter control sequences out of 15000+600000
  571441 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,15n,79p,323b,425s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,16n,79p,323b,425s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on datasetUpload.pdf (7 pages, 468467 bytes).
+Output written on datasetUpload.pdf (7 pages, 469221 bytes).
 PDF statistics:
  155 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

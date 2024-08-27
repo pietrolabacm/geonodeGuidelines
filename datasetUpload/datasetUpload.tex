@@ -123,6 +123,13 @@ clique em "Estilo" e em seguida em "Salvar estilo" (Figura
   \label{fig:exportarsld}
 \end{figure}
 
+\textbf{Atenção, caso o campo de atributo utilizado nas regras de simbologia
+contenha letras maiúsculas, ele deve ser usado no sld apenas com letras
+minúsculas. Isso ocorre por conta dos padrões de nomenclatura do Geonode
+acompanharem os do PostgreSQL que utiliza os nome dos campos em letras
+minúsculas. Utilizar uma regra SLD com um campo com letras maiúsculas irá
+impedir que a camada seja renderizada.}
+
 \subsection{Metadados}
 
 Na página de detalhamento de um dado é possível editar seus metadados através
