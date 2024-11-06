@@ -1,5 +1,5 @@
 # Fdb version 4
-["bibtex datasetUpload"] 0 "datasetUpload.aux" "datasetUpload.bbl" "datasetUpload" 1724784052.8349 0
+["bibtex datasetUpload"] 0 "datasetUpload.aux" "datasetUpload.bbl" "datasetUpload" 0 0
   "datasetUpload.aux" 0 -1 0 "pdflatex"
   "sbc-template.bib" 0 -1 0 ""
   "sbc.bst" 0 -1 0 ""
@@ -7,7 +7,7 @@
   "datasetUpload.bbl"
   "datasetUpload.blg"
   (rewritten before read)
-["pdflatex"] 1724784050.06809 "d:/p/geonodeGuidelines/datasetUpload/datasetUpload.tex" "datasetUpload.pdf" "datasetUpload" 1724784052.838 0
+["pdflatex"] 1728396831.25934 "d:/p/geonodeGuidelines/datasetUpload/datasetUpload.tex" "datasetUpload.pdf" "datasetUpload" 1728396833.90804 0
   "C:/Users/pietro.menezes/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1721301402 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/pietro.menezes/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1711457515 24240295 8ad1dbf63c5562722158b5766ddf4595 ""
   "C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -73,15 +73,15 @@
   "C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ts1ptm.fd" 1585253778 653 96f56dc5d1ef1fe1121f1cfeec70ee0c ""
   "C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1699094857 48766 0b93839be28e9744a24c45075c75b2e2 ""
   "C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "d:/p/geonodeGuidelines/datasetUpload/datasetUpload.tex" 1724784048 9449 57f181baee93f07b410f0069a55f0880 ""
-  "datasetUpload.aux" 1724784051 2648 53ce7ba822718b5d8715fed271213796 "pdflatex"
-  "datasetUpload.bbl" 1711477069 0 d41d8cd98f00b204e9800998ecf8427e "bibtex datasetUpload"
-  "datasetUpload.tex" 1724784048 9449 57f181baee93f07b410f0069a55f0880 ""
+  "d:/p/geonodeGuidelines/datasetUpload/datasetUpload.tex" 1728396826 9421 2906ca27a1a911164723dc64d73ad40f ""
+  "datasetUpload.aux" 1728396832 2650 433d7d13c7c715f0035e52149370eb0f "pdflatex"
+  "datasetUpload.bbl" 1726577692 0 d41d8cd98f00b204e9800998ecf8427e "bibtex datasetUpload"
+  "datasetUpload.tex" 1728396826 9421 2906ca27a1a911164723dc64d73ad40f ""
   "img/LogoINCT.jpg" 1711474807 11646 7533d72663a4afeeaf439d8d7c1929b3 ""
   "img/LogoOdissea.jpg" 1711474821 11723 b00511579ad71f5973889b79380ac319 ""
   "img/criarmapa.pdf" 1711541943 124046 280d229fec4b187d8625ab7f71303a8a ""
-  "img/estilocodigo.pdf" 1711461402 60272 c6319ace33bc83c39b82e06368a17170 ""
   "img/exportarsld.pdf" 1711462568 29675 824369596c569847ece5fdb0f69294ff ""
+  "img/importarEstilo.pdf" 1726577493 75415 c15403feb10da7de4790dc367bd3427a ""
   "img/login.pdf" 1711452054 18667 8a90ca91986c36ff0508effe86b90cfa ""
   "img/metadado.pdf" 1711473681 50430 c084337f242efb529bad9c9ddcf2e36a ""
   "img/relacionamentos.pdf" 1711538676 45112 e8ba37fa292446fa4d4012152c90a18b ""

@@ -1,0 +1,250 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[brazil]{babel}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{nameref}
+%\usepackage[latin1]{inputenc}  
+
+\pagenumbering{gobble}                          % sets page numbering off
+\pagestyle{fancy}\setlength\headheight{100pt}   % set the pagestyle to fancy to include headers and footers
+\pagestyle{fancy}\setlength\textheight{650pt}
+\pagestyle{fancy}\setlength\footskip{20pt}
+\fancyhf{}                                      % clear the header and footer
+\renewcommand{\headrulewidth}{0pt}              % no horizontale ruler under header
+\fancyhead[L]{\includegraphics[width=3.8cm]{img/LogoINCT.jpg}}
+\fancyhead[R]{\includegraphics[width=3.8cm]{img/LogoOdissea.jpg}}
+
+\begin{document} 
+
+%\title{Guia para o carregamento de dados no Geonode Odisseia}
+%\date{}
+%\maketitle
+%\thispagestyle{fancy}
+
+\begin{center}
+  \vspace{12pt}
+  \Large\textbf{Guia para construção de Dashboards no Geonode}
+\end{center}
+
+\section{Introdução}
+
+  Este documento explicita as funcionalidades dos Dashboards do Geonode e traz
+  instruções para o seu uso. As informações aqui contidas são provenientes das
+  documentações oficiais do 
+  \textcolor{blue}
+  {\href{https://docs.geonode.org/en/master/usage/dashboard/index.html}
+  {Geonode}}
+  e do 
+  \textcolor{blue}
+  {\href{https://docs.mapstore.geosolutionsgroup.com/en/v2024.01.02/user-guide/exploring-dashboards/}
+  {MapStore}}.
+
+\section{Criação} \label{sec:firstpage}
+
+  Para criar um novo Dashboard siga até a aba "Dados/Conjuntos de Dados" ou
+  "Dashboards" no menu superior esquerdo (Figura \ref{fig:criar}.1). No
+  catálogo de dados ou de dashboards clique em "Adicionar Recurso/Criar
+  dashboard" (Figura \ref{fig:criar}.2).
+
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth, keepaspectratio]{img/criarGeostory.pdf}
+    \caption{Fluxo para a criação de um novo Geostory.}
+    \label{fig:criar}
+  \end{figure}
+
+  Uma vez na tela de criação de dashboards, a interface estará dividida em dois
+  contêineres. Na esquerda é possível adicionar e modificar os parametros dos
+  widgets, enquanto na direita é possível posicionar e visualizar os widgets no
+  dashboard. Para criar um novo widget utilize o botão de "+" na parte superior
+  esquerda da tela e selecione o tipo de widget que deseja criar.
+
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth, keepaspectratio]{img/overviewGeostory.pdf}
+    \caption{Interface gráfica de criação do Geostory em destaque o botão de mais que adiciona seções à página.}
+    \label{fig:overview}
+  \end{figure}
+
+\section{Tipos de Widget}
+
+\subsection{Mapa}
+
+  Widgets de mapa permitem adicionar mapas previamente construidos no Geonode
+  ao Dashboard, o mapa pode ser usado para visualização e também para a
+  \b{filtragem} dos dados por meio das conexões (ADICIONAR LINK PARA AS
+  CONEXOES AQUI).
+
+  Para criar um widget de mapa selecione "Mapa" durante a criação de um novo
+  widget e em seguida clique no mapa do Geonode que deseja utilizar, você pode
+  usar o campo de texto para buscar os mapas. Em seguida, clique em continuar,
+  será possível configurar as camadas visíveis ou adicionar novas camadas ao
+  mapa. Também é possível desabilitar a identificação de elementos com o clique
+  no mapa. Por fim clique em adicionar widget. Clique em continuar, adicione um
+  título e descrição caso desejar, e clique em adicionar widget.
+
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth, keepaspectratio]{img/tituloGeostory.pdf}
+    \caption{Interface de edição da seção de título do Geostory.}
+    \label{fig:titulo}
+  \end{figure}
+
+\subsection{Legenda}
+
+  O widget de legenda adiciona uma legenda interativa ao dashboard que deve
+  estar obrigatoriamente conectada a um mapa. Além de representar os dados, o
+  widget de legenda também permite alternar a visualização das camadas de um
+  mapa.
+
+  Para criar um widget de legenda selecione "Legenda" durante a criação de um
+  novo widget e em seguida selecione o qual a legenda está conectada, caso o
+  dashboard possua mais de um mapa. Clique em continuar, adicione um título e
+  descrição caso desejar, e clique em adicionar widget.
+
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth, keepaspectratio]{img/midiaGeonode.pdf}
+    \caption{Interface gráfica de inserção de mídias do Geonode.}
+    \label{fig:midiageonode}
+  \end{figure}
+
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth, keepaspectratio]{img/midiaExterno.pdf}
+    \caption{Interface gráfica de inserção de mídias externas.}
+    \label{fig:midiaexterna}
+  \end{figure}
+
+\subsection{Gráfico}
+
+  O widget de gráfico adiciona gráficos interativos ao dashboard que podem
+  estar ou não correlacionados com os dados demonstrados em mapa.
+  
+  Para criar um widget de gráfico selecione "Gráfico" durante a criação de um
+  novo widget e em seguida selecione o dado que deseja representar, este dado
+  deve ser inserido previamente no geonode como um dataset. Em seguida,
+  selecione o tipo de gráfico que deseja inserir: barra, pizza ou linha. Na
+  tela seguinte é possível editar os aspectos do gráfico: os atributos que irão
+  ocupar os eixos x e y, o tipo de operação que será realizado para ingerir os
+  dados do eixo y, a cor do gráfico, o uso de legenda e por fim o campo de
+  edição avançada que permite alterar a representação do gráfico. Além disso, o
+  widget permite o uso de conexões e filtros. Ao finalizar a edição, clique em
+  continuar, adicione um título e descrição caso desejar, e clique em adicionar
+  widget.
+
+\subsection{Contador}
+
+  O widget de contador adiciona um contador interativo ao dashboard que
+  registra uma contagem ou operação matemática que está relacionada ou não aos
+  dados do mapa.
+  
+  Para criar um widget de contador selecione "Contador" durante a criação de um
+  novo widget e em seguida selecione o dado que deseja representar, este dado
+  deve ser inserido previamente no geonode como um dataset. Na tela seguinte é
+  possível editar os aspectos do contador como o atributo a ser representado, a
+  operação matemática a ser realizada nos dados deste atributo e a unidade de
+  medida do contador. O widget permite o uso de conexões e filtros. Ao
+  finalizar a edição, clique em continuar, adicione um título e descrição caso
+  desejar, e clique em adicionar widget.
+
+\subsection{Tabela}
+  
+  O widget de tabela permite a visualização de um dataset na forma de uma
+  tabela interativa.
+  
+  Para criar um widget de table selecione "Tabela" durante a criação de um novo
+  widget e em seguida selecione o dataset que deseja representar, este dado
+  deve ser inserido previamente no geonode. Em seguida, é possível selecionar
+  quais colunas da tabela estarão visiveis no widget. O widget permite o uso de
+  conexões e filtros. Por fim, clique em continuar, adicione um título e
+  descrição caso desejar, e clique em adicionar widget.
+
+\subsection{Texto}
+  O widget de texto permite a inserção de uma caixa de texto ao dashboard.
+
+  Para criar um widget de texto selecione "Texto" durante a criação de um novo
+  widget e em seguida insira o texto que deseja representar e opcionalmente um
+  título. Também é possível inserir imagens e incorporar mapas e vídeos por
+  meio de embeded links. Por fim, clique em adicionar widget.
+
+\section{Conexões}
+
+Os dashboards do geonode permitem a conexão entre os widgets de mapas e tabelas
+com os demais widgets, criando assim widgets interativos onde é possível
+filtrar os dados que estão sendo representados.
+
+\subsection{Conexão com mapas}
+
+  Ao conectar um mapa a um outro widget, os dados presentes na área que está
+  sendo visualizada no mapa serão os dados utilizados pelos demais widgets. De
+  forma que, à medida que o usuário altera a visualização do mapa para uma
+  região específica os demais widgets irão filtrar os dados para representar
+  aquela região.
+
+\subsection{Conexão com tabelas}
+
+  Ao conectar uma tabela a um outro widget, uma linha de filtros será
+  adicionada ao topo da tabela. Os filtros aplicados a tabela irão afetar
+  também os demais widgets, com exceção dos mapas, que irão mover seu centro
+  para representar os dados filtrados na tabela.
+
+\subsection{Criando conexões}
+
+  Durante a inserção de um novo widget, caso haja no dashboard um mapa ou
+  tabela no qual o widget pode se conectar um sinal de conexão estará
+  disponível. Basta clicar no sinal de conexão e selecionar a qual widget
+  deseja conectar (caso apenas um widget conectável esteja disponível, a
+  conexão é feita automaticamente). Caso adicione um widget conectável após a
+  inserção de outro widget, basta clicar no menu de opções do widget, editar e
+  acionar o sinal de conexão.
+
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth, keepaspectratio]{img/geocarrousselGeostory.pdf}
+    \caption{Fluxo de criação de um Geocarousel.}
+    \label{fig:geocarousel}
+  \end{figure}
+
+
+\section{Filtros}
+  O construtor permite que o usuário reorganize a ordem das seções do Geostory
+  bem como navegue por ele. Utilizando o botão de arrastar no canto superior
+  esquerdo de cada seção é possível modificar a ordem dos elementos criados
+  anteriormente e utilizando o ícone da lupa no canto direito de cada seção é
+  possível mover a visualização até aquele elemento.
+
+  Na parte superior do construtor o usuário pode apagar uma seção selecionada
+  através do ícone da lixeira. Uma prévia do Geostory pode ser acessada através
+  do ícone de previsão, para retornar ao editor utilize o ícone de edição no
+  canto superior esquerdo da página (Figura \ref{fig:previa}).
+
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth, keepaspectratio]{img/visualizacaoGeostory.pdf}
+    \caption{Entrada e saída do modo de prévia.}
+    \label{fig:previa}
+  \end{figure}
+
+\section{Configuração}
+  Na parte superior do construtor através do ícone de engrenagem é possível
+  acessar o menu de configuração. Este permite que o usuário modifique a
+  temática geral do Geostory, como cores do plano de fundo, fonte e cores do
+  texto e sombreamento das caixas de texto. O usuário também pode adicionar
+  elementos na interface gráfica como título da página, logo e atalhos de
+  navegação. Cada seção selecionada nas configurações irá criar um atalho de
+  navegação no topo da página (Figura \ref{fig:navegacao}).
+
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth, keepaspectratio]{img/navegacaoGeostory.pdf}
+    \caption{Configuração da barra de navegação de um Geostory.}
+    \label{fig:navegacao}
+  \end{figure}
+
+\end{document}

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1721315261.4432 "d:/p/geonodeGuidelines/geostories/geostories.tex" "geostories.pdf" "geostories" 1721315263.8774 2
+["pdflatex"] 1727796138.71019 "d:/p/geonodeGuidelines/geostories/geostories.tex" "geostories.pdf" "geostories" 1727796141.09203 2
   "C:/Users/pietro.menezes/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1721301402 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/pietro.menezes/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1711457515 24240295 8ad1dbf63c5562722158b5766ddf4595 ""
   "C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -83,10 +83,10 @@
   "C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1699094857 48766 0b93839be28e9744a24c45075c75b2e2 ""
   "C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/pietro.menezes/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "d:/p/geonodeGuidelines/geostories/geostories.tex" 1721315255 10008 8b59fec433576ef986ae79d4f42bcf14 ""
-  "geostories.aux" 1721315263 3968 af51392ee512eeb012d509f980c05e2b "pdflatex"
-  "geostories.out" 1721315263 1195 95998de705a132464f5ec799089772a8 "pdflatex"
-  "geostories.tex" 1721315255 10008 8b59fec433576ef986ae79d4f42bcf14 ""
+  "d:/p/geonodeGuidelines/geostories/geostories.tex" 1727796132 10008 2997c9e8545086cd6ba7de16b2f0ca17 ""
+  "geostories.aux" 1727796140 3968 af51392ee512eeb012d509f980c05e2b "pdflatex"
+  "geostories.out" 1727796140 1195 95998de705a132464f5ec799089772a8 "pdflatex"
+  "geostories.tex" 1727796132 10008 2997c9e8545086cd6ba7de16b2f0ca17 ""
   "img/LogoINCT.jpg" 1711474807 11646 7533d72663a4afeeaf439d8d7c1929b3 ""
   "img/LogoOdissea.jpg" 1711474821 11723 b00511579ad71f5973889b79380ac319 ""
   "img/criarGeostory.pdf" 1721307040 125879 f266dfb83c489592a23a18c558f28b5b ""
